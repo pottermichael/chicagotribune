@@ -1,35 +1,34 @@
 affine==2.3.0
-argon2-cffi @ file:///opt/concourse/worker/volumes/live/c4db8eed-7de0-4d68-400c-2ea7e21d3750/volume/argon2-cffi_1596828478065/work
-async-generator==1.10
-attrs @ file:///tmp/build/80754af9/attrs_1604765588209/work
-backcall==0.2.0
+appnope==0.1.0
+asn1crypto==1.3.0
+attrs==19.3.0
+backcall==0.1.0
 beautifulsoup4==4.8.2
-bleach @ file:///tmp/build/80754af9/bleach_1600439572647/work
+bleach==3.1.0
 boto3==1.10.48
 botocore==1.13.48
-brotlipy==0.7.0
 CacheControl==0.12.6
-certifi==2020.12.5
-cffi @ file:///opt/concourse/worker/volumes/live/2aa8abfe-8b8d-4889-78d9-837b74c3cd64/volume/cffi_1606255119410/work
-chardet @ file:///opt/concourse/worker/volumes/live/92aa0fea-cec8-43da-4d77-2574e78c5981/volume/chardet_1605303181342/work
+certifi==2020.6.20
+cffi==1.14.0
+chardet==3.0.4
 chroma-py==0.1.0.dev1
-click==7.1.2
+Click==7.0
 click-plugins==1.1.1
-cligj==0.7.1
+cligj==0.5.0
 colour==0.1.5
 contextily==1.0rc2
-cryptography @ file:///opt/concourse/worker/volumes/live/b3e45745-3fd5-42bd-5684-fb9ad1dca263/volume/cryptography_1605544479377/work
+cryptography==2.8
 cycler==0.10.0
-decorator==4.4.2
+decorator==4.4.1
 defusedxml==0.6.0
-Deprecated==1.2.10
+Deprecated==1.2.6
 descartes==1.1.0
 docutils==0.15.2
 entrypoints==0.3
 Fiona==1.8.4
 Flask==1.1.1
 Flask-WTF==0.14.2
-GDAL==2.3.3
+GDAL==3.2.0
 geographiclib==1.50
 geojson==2.5.0
 geojsonio==0.0.3
@@ -42,100 +41,91 @@ gspread==3.1.0
 gunicorn==20.0.4
 httplib2==0.17.0
 idna==2.8
-importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1602276842396/work
+importlib-metadata==1.5.0
 ipykernel==5.1.3
-ipython @ file:///opt/concourse/worker/volumes/live/27d08825-4fae-44a4-4324-8338f92c3ef3/volume/ipython_1604101240866/work
-ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+ipython==7.12.0
+ipython-genutils==0.2.0
 ipywidgets==7.5.1
 iso3166==1.0.1
 itsdangerous==1.1.0
 jedi==0.16.0
-Jinja2==2.11.2
+Jinja2==2.11.1
 jmespath==0.9.4
-joblib @ file:///tmp/build/80754af9/joblib_1601912903842/work
-jsonschema @ file:///tmp/build/80754af9/jsonschema_1602607155483/work
+joblib==0.14.1
+jsonschema==3.2.0
 jupyter==1.0.0
-jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1601311786391/work
-jupyter-console @ file:///tmp/build/80754af9/jupyter_console_1598884538475/work
-jupyter-core @ file:///opt/concourse/worker/volumes/live/a00c6604-807b-490b-6c3f-c66a22f02fab/volume/jupyter_core_1606148990852/work
-jupyterlab-pygments @ file:///tmp/build/80754af9/jupyterlab_pygments_1601490720602/work
+jupyter-client==5.3.4
+jupyter-console==6.1.0
+jupyter-core==4.6.1
 jwcrypto==0.6.0
-kiwisolver @ file:///opt/concourse/worker/volumes/live/7f2d375c-30f6-458e-63e3-3be3b4be2918/volume/kiwisolver_1604014611853/work
+kiwisolver==1.1.0
 mapboxgl==0.10.2
 MarkupSafe==1.1.1
-matplotlib @ file:///opt/concourse/worker/volumes/live/61624fbb-2a49-420f-6e89-f3df5b5e7cab/volume/matplotlib-base_1603373809385/work
+matplotlib==3.1.3
 mercantile==1.1.2
 mistune==0.8.4
-mkl-fft==1.0.15
-mkl-random==1.1.1
-mkl-service==2.3.0
 msgpack==0.6.2
 munch==2.5.0
-nbclient @ file:///tmp/build/80754af9/nbclient_1602783176460/work
-nbconvert @ file:///opt/concourse/worker/volumes/live/d4b0787b-b6c8-4d28-5453-3381885d5b33/volume/nbconvert_1601914848300/work
-nbformat @ file:///tmp/build/80754af9/nbformat_1602783287752/work
+nbconvert==5.6.1
+nbformat==5.0.4
 ndg-httpsclient==0.5.1
-nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1606153767164/work
-notebook @ file:///opt/concourse/worker/volumes/live/d2f310db-b6ef-49ca-4ff6-cbb3a628fe1d/volume/notebook_1601501569294/work
-numpy @ file:///opt/concourse/worker/volumes/live/a1b5ea96-b05c-40ba-5dfb-4542ece1c186/volume/numpy_and_numpy_base_1603491228242/work
+notebook==6.0.3
+numpy==1.18.1
 oauth2client==4.1.3
 olefile==0.46
-packaging @ file:///tmp/build/80754af9/packaging_1606930849755/work
 palettable==3.3.0
 pandas==0.25.3
-pandocfilters @ file:///opt/concourse/worker/volumes/live/315ac9bb-93fd-4adc-6795-345692fcfaed/volume/pandocfilters_1605120446899/work
-parso @ file:///tmp/build/80754af9/parso_1596826841367/work
+pandocfilters==1.4.2
+parso==0.6.1
 patsy==0.5.1
-pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
-pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
-Pillow @ file:///opt/concourse/worker/volumes/live/95e97a5f-0d90-45c8-4080-207143da6ebf/volume/pillow_1603822285720/work
-plotly @ file:///tmp/build/80754af9/plotly_1597716491413/work
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==7.0.0
+plotly==4.9.0
 plotly-express==0.4.1
 polyline==1.4.0
-prometheus-client @ file:///tmp/build/80754af9/prometheus_client_1606344362066/work
-prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1602688806899/work
-ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1605560620615/work/dist/ptyprocess-0.6.0-py2.py3-none-any.whl
+prometheus-client==0.7.1
+prompt-toolkit==3.0.3
+ptyprocess==0.6.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
-Pygments @ file:///tmp/build/80754af9/pygments_1607368905949/work
-pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1606517880428/work
-pyparsing==2.4.7
+pycparser==2.19
+Pygments==2.5.2
+pyOpenSSL==19.1.0
+pyparsing==2.4.6
 pyproj==1.9.6
-pyrsistent @ file:///opt/concourse/worker/volumes/live/656e0c1b-ef87-4251-4a51-1290b2351993/volume/pyrsistent_1600141745371/work
+pyrsistent==0.15.7
 pysal==2.1.0
-PySocks @ file:///opt/concourse/worker/volumes/live/ef943889-94fc-4539-798d-461c60b77804/volume/pysocks_1605305801690/work
+PySocks==1.7.1
 python-dateutil==2.8.1
-pytz @ file:///tmp/build/80754af9/pytz_1606604771399/work
-pyzmq==20.0.0
-qtconsole @ file:///tmp/build/80754af9/qtconsole_1600870028330/work
-QtPy==1.9.0
+pytz==2019.3
+pyzmq==18.1.1
+qtconsole==4.6.0
 rasterio==1.0.21
 requests==2.22.0
 retrying==1.3.3
 rsa==4.0
 s3transfer==0.2.1
-scikit-learn @ file:///opt/concourse/worker/volumes/live/2dacdc11-21e7-44f5-57b4-6b8eb6ceb626/volume/scikit-learn_1598376924598/work
-scipy @ file:///opt/concourse/worker/volumes/live/9698578f-91da-4d5f-6fce-b26b1f42eb5a/volume/scipy_1597686637948/work
+scikit-learn==0.22.1
+scipy==1.4.1
 seaborn==0.10.0
-Send2Trash @ file:///tmp/build/80754af9/send2trash_1607525499227/work
+Send2Trash==1.5.0
 Shapely==1.6.4.post1
-six @ file:///opt/concourse/worker/volumes/live/f983ba11-c9fe-4dff-7ce7-d89b95b09771/volume/six_1605205318156/work
+six==1.14.0
 snuggs==1.4.7
-soupsieve==2.0.1
-statsmodels @ file:///opt/concourse/worker/volumes/live/c88b3fa8-c6a0-4ff4-6b2f-464912022a9d/volume/statsmodels_1606925355294/work
-terminado==0.9.1
+soupsieve==1.9.5
+statsmodels==0.11.0
+terminado==0.8.3
 testpath==0.4.4
-threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
-tornado @ file:///opt/concourse/worker/volumes/live/d531d395-893c-4ca1-6a5f-717b318eb08c/volume/tornado_1606942307627/work
-tqdm @ file:///tmp/build/80754af9/tqdm_1607369919789/work
+tornado==6.0.3
+tqdm==4.42.1
 traitlets==4.3.3
 uritemplate==3.0.1
-urllib3 @ file:///tmp/build/80754af9/urllib3_1603305693037/work
-wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
+urllib3==1.25.8
+wcwidth==0.1.8
 webencodings==0.5.1
-Werkzeug==1.0.1
+Werkzeug==1.0.0
 widgetsnbextension==3.5.1
-wrapt==1.12.1
-WTForms @ file:///tmp/build/80754af9/wtforms_1597707484216/work
-zipp @ file:///tmp/build/80754af9/zipp_1604001098328/work
+wrapt==1.11.2
+WTForms==2.2.1
+zipp==2.2.0
