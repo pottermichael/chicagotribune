@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'/>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
+    <!-- Mapbox and Tour Config File -->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
+    <!-- Basic styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="/static/console.css">
+  </head>
+  <body>
+
+    <div id='map'></div>
+    <script src="/static/blipper.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <div class='map-overlay'>
+        <h1>Year:
+          <label id='year'></label>
+        </h1>
+        <div id="slider"></div>
+        <button id="play-button">Play</button>
+    </div>
+    <script>
+
+      mapboxgl.accessToken = 'pk.eyJ1IjoibXBvdHRlciIsImEiOiJjajAxZGltM3UwNjF2MzJsczVnN3R2eTNnIn0._Sj0HRLt8VTQGTojMWYFfQ';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mpotter/ck3ukxqlq0od01cnhven0r0ki',
+        center: [-87.65125, 41.88814],
+        zoom: 14.25
+      });
+
+      //create array of numbers representing range of years to filter through
+      var years = [
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024
+      ];
+      console.log(years)
+
+      var yearMax = years.reduce(function (a, b) {
+        return Math.max(a, b);
+      });
+      console.log(yearMax)
+
+      var yearMin = years.reduce(function (a, b) {
+        return Math.min(a, b);
+      });
+      console.log(yearMin)
+
+      function filterBy(year) {
+        var filterYear = ['<=',['number',['get', 'year']],year];
+        map.setFilter('property-circles', filterYear);
+        map.setFilter('property-labels', filterYear);
+        // Set the label to the month
+        document.getElementById('year').innerText = year;
+        console.log(year)
+      }
+
+      map.on('load', function () {
+        //import data
+        d3.json("/static/chicago_cbd_supply_to_date.geojson", function (err, data) {
+          if (err)
+            throw err;
+
+          map.addSource('delivered', {'type': 'geojson',data: data});
+          map.addLayer({
+            'id': 'property-circles',
+            'type': 'circle',
+            'source': 'delivered',
+            'paint': {
+              'circle-color': [
+                'match',
+                [
+                  'get', 'use'
+                ],
+                'Resi',
+                '#fbb03b',
+                'Office',
+                '#0E9447',
+                /*other*/
+                '#7f00ff'
+              ],
+              'circle-opacity': .75,
+              'circle-radius': [
+                'interpolate',
+                ['linear'],
+                [
+                  'number',
+                  [
+                    'get', 'gfa'
+                  ]
+                ],
+                50000,
+                7.5,
+                900000,
+                35
+              ]
+            }
+          });
+          map.addLayer({
+            'id': 'property-labels',
+            'type': 'symbol',
+            'source': 'delivered',
+            'layout': {
+              'text-field': [
+                'to-string',
+                [
+                  'get', 'project'
+                ]
+              ],
+              'text-font': [
+                'Open Sans Bold', 'Arial Unicode MS Bold'
+              ],
+              'text-size': [
+                'interpolate',
+                ['linear'],
+                ['zoom'],
+                4,
+                9,
+                6,
+                12
+              ],
+              'text-max-width': 5
+            },
+            'paint': {
+              'text-color': 'rgba(0,0,0,0.5)'
+            }
+          });
+
+          // Set filter to first year of the array 0 = 1999
+          filterBy(yearMin);
+          // D3 slider and play button
+          var margin = {
+              top: 50,
+              right: 10,
+              bottom: 0,
+              left: 10
+            },
+
+          width = document.getElementById('slider').clientWidth - margin.left - margin.right,
+          height = 50 - margin.top - margin.bottom;
+
+          var moving = false;
+          var currentValue = 0;
+          var targetValue = width;
+          console.log(width);
+          var slider = d3.select("#slider").append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom).attr("transform", "translate(" + 0 + "," + height + ")");
+
+          var playButton = d3.select("#play-button");
+          var x = d3.scaleLinear(). //建立映射关系
+          domain([yearMin, yearMax+1]).range([0, targetValue]).clamp(true);
+
+          slider.append("line").attr("class", "track").attr("x1", x.range()[0]).attr("x2", x.range()[1]).select(function () {
+            return this.parentNode.appendChild(this.cloneNode(true));
+          }).attr("class", "track-inset").select(function () {
+            return this.parentNode.appendChild(this.cloneNode(true));
+          }).attr("class", "track-overlay").call(d3.drag().on("start.interrupt", function () {
+            slider.interrupt();
+          }).on("start drag", function () {
+            currentValue = d3.event.x;
+            update(x.invert(currentValue));
+          }));
+
+          slider.insert("g", ".track-overlay").attr("class", "ticks").attr("transform", "translate(0," + 18 + ")").selectAll("text").data(x.ticks(5)).enter().append("text").attr("x", x).attr("y", 10).attr("text-anchor", "middle").text(function (d) {
+            return (d + 1);
+          });
+
+          var handle = slider.insert("circle", ".track-overlay").attr("class", "handle").attr("r", 9);
+
+          var labels = slider.append("g").append("text").attr("class", "labels").attr("text-anchor", "middle").text(years[0]).attr("transform", "translate(0," + (
+            -15
+          ) + ")").style("fill", "#4F442B")
+
+          playButton.on("click", function () {
+            var button = d3.select(this);
+            if (button.text() == "Pause") {
+              moving = false;
+              clearInterval(timer);
+              // timer = 0;
+              button.text("Play");
+            } else {
+              moving = true;
+              timer = setInterval(step, 500); //调用interval周期函数
+              button.text("Pause");
+            }
+            console.log("Slider moving: " + moving); //判定是否在运动
+          })
+
+          function step() {
+            update(x.invert(currentValue));
+            currentValue = currentValue + (targetValue / (years.length));
+
+            if (currentValue > targetValue) {
+              moving = false;
+              currentValue = 0;
+              clearInterval(timer);
+              // timer = 0;
+              playButton.text("Play");
+              // console.log("Slider moving: " + moving);
+            }
+          }
+
+          function update(year) {
+            var year = parseInt(year, 10);
+            handle.attr("cx", x(year));
+            labels.attr("x", x(year)).text(years[year]);
+            filterBy(year);
+          }
+
+          //add layers for blip
+          map.addSource('point', {
+            "type": "geojson",
+            "data": {
+              "type": "Point",
+              "coordinates": [-87.642820, 41.891868]
+            }
+          });
+          map.addLayer({
+            "id": "point",
+            "source": "point",
+            "type": "circle",
+            "paint": {
+              "circle-radius": initialRadius,
+              "circle-radius-transition": {
+                duration: 0
+              },
+              "circle-opacity-transition": {
+                duration: 0
+              },
+              "circle-color": "#256DFC"
+            }
+          });
+          map.addLayer({
+            "id": "point1",
+            "source": "point",
+            "type": "circle",
+            "paint": {
+              "circle-radius": initialRadius,
+              "circle-color": "#2558BD"
+            }
+          });
+          animateMarker(0);
+        });
+      });
+    </script>
+
+  </body>
+</html>

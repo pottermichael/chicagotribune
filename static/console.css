@@ -1,0 +1,66 @@
+/* console */
+.map-overlay {
+  font: 16px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  position: fixed;
+  width: 15%;
+  right: 10px;
+  bottom: 25px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+  border-radius: 3px;
+  padding: 15px 10px 15px 15px;
+}
+
+/* console */
+#play-button {
+  background: #F14E58;
+  padding-right: 26px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  margin: 0;
+  padding: 0 12px;
+  width: 60px;
+  cursor: pointer;
+  height: 60px;
+  text-align: center;
+}
+
+#play-button:hover {
+  background-color: #848480;
+  text-align: center;
+}
+
+.ticks {
+  font-size: 10px;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: square;
+}
+
+.track {
+  stroke: #000;
+  stroke-opacity: 0.3;
+  stroke-width: 10px;
+}
+
+.track-inset {
+  stroke: #dcdcdc;
+  stroke-width: 8px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  stroke: transparent;
+  cursor: crosshair;
+}
+
+.handle {
+  fill: red;
+  stroke: #000;
+  stroke-opacity: 0.5;
+}

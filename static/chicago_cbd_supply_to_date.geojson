@@ -1,0 +1,4329 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 77100,
+        "comb_add": "905 W Fulton St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Thor",
+        "status": "Stabilized",
+        "address": "905 W Fulton St",
+        "project": "Mondelez",
+        "submarket": "Fulton Market",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6501,
+          41.8865
+        ],
+        "type": "Point"
+      },
+      "id": "0466953416794b33bd198e0d891d5dfa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 12000,
+        "comb_add": "351 W Huron St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Regency",
+        "status": "Lease Up",
+        "address": "351 W Huron St",
+        "project": "351 W Huron",
+        "submarket": "River North",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6377,
+          41.8945
+        ],
+        "type": "Point"
+      },
+      "id": "074fa14349e172fc84f70d4155b87167"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1504000,
+        "comb_add": "131 S Dearborn St, 60603, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Prime Group",
+        "status": "Stabilized",
+        "address": "131 S Dearborn St",
+        "project": "Citadel",
+        "submarket": "Loop",
+        "year": 2003
+      },
+      "geometry": {
+        "coordinates": [
+          -87.629,
+          41.8797
+        ],
+        "type": "Point"
+      },
+      "id": "08a8ad2fc44bfc0ae379ecb094668bf8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 698000,
+        "comb_add": "340 N Orleans St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Magellan / Kennedy / Hines",
+        "status": "Lease Up",
+        "address": "340 N Orleans St",
+        "project": "WPE",
+        "submarket": "River North",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6365,
+          41.8878
+        ],
+        "type": "Point"
+      },
+      "id": "0d696e9499996dc9e2882d6fe4e25302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 405000,
+        "comb_add": "1140 N Wells St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Onni",
+        "status": "Stabilized",
+        "address": "1140 N Wells St",
+        "project": "OldTown Park - PH I",
+        "submarket": "Near North",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6349,
+          41.9036
+        ],
+        "type": "Point"
+      },
+      "id": "0dd7595f7bf3d9047efc78761c06f091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 503000,
+        "comb_add": "201 N Columbus Dr, 60601, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Magellan / LendLease",
+        "status": "Construction",
+        "address": "201 N Columbus Dr",
+        "project": "Cascade",
+        "submarket": "Lakeshore East",
+        "year": 2023
+      },
+      "geometry": {
+        "coordinates": [
+          -87.615,
+          41.8854
+        ],
+        "type": "Point"
+      },
+      "id": "0e4a5c493ce68cfbad86931c7ecfdba6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 134000,
+        "comb_add": "30 E Balbo Av, 60605, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Gibane Company",
+        "status": "Stabilized",
+        "address": "30 E Balbo Av",
+        "project": "30 East",
+        "submarket": "South Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6265,
+          41.8733
+        ],
+        "type": "Point"
+      },
+      "id": "0ff6a907d0874dd7c19d7d04aff9853c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 608000,
+        "comb_add": "1045 W Randolph St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "SBC",
+        "status": "Stabilized",
+        "address": "1045 W Randolph St",
+        "project": "McDonalds",
+        "submarket": "Fulton Market",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6539,
+          41.8837
+        ],
+        "type": "Point"
+      },
+      "id": "14a0ddb4f1892d257d720027e8d81437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 171000,
+        "comb_add": "747 N Wabash Ave, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "McCaffery",
+        "status": "Stabilized",
+        "address": "747 N Wabash Ave",
+        "project": "Bernardin",
+        "submarket": "Gold Coast",
+        "year": 2005
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6269,
+          41.8964
+        ],
+        "type": "Point"
+      },
+      "id": "15b92ef2ba9d86434f3287a615e1fb82"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 298000,
+        "comb_add": "720 N LaSalle Dr, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Magellan",
+        "status": "Stabilized",
+        "address": "720 N LaSalle Dr",
+        "project": "Exhibit",
+        "submarket": "River North",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.634,
+          41.8954
+        ],
+        "type": "Point"
+      },
+      "id": "16210f6ef66776ff78c41b8b1fe97385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 264000,
+        "comb_add": "205 S Peoria St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "White Oak / Crayton",
+        "status": "Stabilized",
+        "address": "205 S Peoria St",
+        "project": "Milleau",
+        "submarket": "Far West Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6494,
+          41.8788
+        ],
+        "type": "Point"
+      },
+      "id": "1a46351ce2383ea9188ac55dbcfdedbf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1373754,
+        "comb_add": "1 N Wacker Dr, 60606, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "TJBC",
+        "status": "Stabilized",
+        "address": "1 N Wacker Dr",
+        "project": "UBS",
+        "submarket": "West Loop",
+        "year": 2001
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6363,
+          41.8823
+        ],
+        "type": "Point"
+      },
+      "id": "215fdaf4f2da8b877ff75c1ffa19de04"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 249000,
+        "comb_add": "161 W Kinzie St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Lynd Co.",
+        "status": "Stabilized",
+        "address": "161 W Kinzie St",
+        "project": "EnV",
+        "submarket": "River North",
+        "year": 2010
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6336,
+          41.8889
+        ],
+        "type": "Point"
+      },
+      "id": "21bfa62ffa61c56926e1d75eb4563eab"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 261000,
+        "comb_add": "609 W North Ave, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "White Oak / CA Ventures",
+        "status": "Construction",
+        "address": "609 W North Ave",
+        "project": "Father & Son",
+        "submarket": "Old Town",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6442,
+          41.9106
+        ],
+        "type": "Point"
+      },
+      "id": "225a0660065810e5d49a0c0a859345cb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 138000,
+        "comb_add": "9 W Walton St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "JDL",
+        "status": "Stabilized",
+        "address": "9 W Walton St",
+        "project": "Walton No 9",
+        "submarket": "Gold Coast",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6286,
+          41.8999
+        ],
+        "type": "Point"
+      },
+      "id": "23836f500f823377e00b53c802963237"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 387000,
+        "comb_add": "215 W Washington Blvd, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Jupiter/Met",
+        "status": "Stabilized",
+        "address": "215 W Washington Blvd",
+        "project": "215 West",
+        "submarket": "Loop",
+        "year": 2010
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6342,
+          41.8829
+        ],
+        "type": "Point"
+      },
+      "id": "250883c913de9e39d70570d9cbc6a921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 190000,
+        "comb_add": "601 W Jackson Blvd, 60661, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Moceri/Rozak",
+        "status": "Stabilized",
+        "address": "601 W Jackson Blvd",
+        "project": "Jeff Jack",
+        "submarket": "West Loop",
+        "year": 2015
+      },
+      "geometry": {
+        "coordinates": [
+          -87.643,
+          41.8777
+        ],
+        "type": "Point"
+      },
+      "id": "258cff03edb78ebf39db7d079de17a34"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 92000,
+        "comb_add": "1435 W 15th St, 60608, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Cedar St",
+        "status": "Lease Up",
+        "address": "1435 W 15th St",
+        "project": "FLATS Chicago The Otis",
+        "submarket": "Near West Side",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6623,
+          41.8614
+        ],
+        "type": "Point"
+      },
+      "id": "25fbcf29a329542da64359507aa730ce"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 297000,
+        "comb_add": "808 N Wells St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Amli",
+        "status": "Construction",
+        "address": "808 N Wells St",
+        "project": "808 N Wells",
+        "submarket": "River North",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6345,
+          41.8968
+        ],
+        "type": "Point"
+      },
+      "id": "263f54e4acabcea8a90ebd4163d4791f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 176000,
+        "comb_add": "30 E Adams St, 60603, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Cedar Street",
+        "status": "Construction",
+        "address": "30 E Adams St",
+        "project": "The Hartman",
+        "submarket": "Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6265,
+          41.8797
+        ],
+        "type": "Point"
+      },
+      "id": "272c1511424b5c3c481e5c574b96a9cd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 207000,
+        "comb_add": "29 S LaSalle St, 60603, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Doice Living",
+        "status": "Construction",
+        "address": "29 S LaSalle St",
+        "project": "Millenium on LaSalle",
+        "submarket": "Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6325,
+          41.8812
+        ],
+        "type": "Point"
+      },
+      "id": "28ff2887c1b5b5d22540fab2be860f21"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 56000,
+        "comb_add": "508 W Diversey Parkway, 60614, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Broder Prop.",
+        "status": "Lease Up",
+        "address": "508 W Diversey Parkway",
+        "project": "No 508",
+        "submarket": "Lakeview",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6419,
+          41.9332
+        ],
+        "type": "Point"
+      },
+      "id": "295007e81e22ab553fd022eafd64c4bf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 444000,
+        "comb_add": "465 N Park Dr, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Jupiter/Met",
+        "status": "Stabilized",
+        "address": "465 N Park Dr",
+        "project": "465 N Park",
+        "submarket": "Streeterville",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6196,
+          41.8907
+        ],
+        "type": "Point"
+      },
+      "id": "2af05d8dcfd1366e0e88f4064c6301e6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 245000,
+        "comb_add": "311 W Illinois St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "TJBC",
+        "status": "Stabilized",
+        "address": "311 W Illinois St",
+        "project": "3Eleven",
+        "submarket": "River North",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.636,
+          41.8904
+        ],
+        "type": "Point"
+      },
+      "id": "2c3c1b6d7ef6ce3cb32cf47be36f8ea5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 300000,
+        "comb_add": "1407 S Michigan Ave, 60605, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Russland Capital, Lendlease",
+        "status": "Lease Up",
+        "address": "1407 S Michigan Ave",
+        "project": "1407 on Michigan",
+        "submarket": "South Loop",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.624,
+          41.8639
+        ],
+        "type": "Point"
+      },
+      "id": "2d794b5ccd2730a2206070ac1e8bac5e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 812000,
+        "comb_add": "375 E Wacker Dr, 60601, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Magellan",
+        "status": "Construction",
+        "address": "375 E Wacker Dr",
+        "project": "Wanda",
+        "submarket": "Streeterville",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -87.618,
+          41.8876
+        ],
+        "type": "Point"
+      },
+      "id": "2d7bc918c68f19650df20fdb4f61c4a8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 102000,
+        "comb_add": "405 N Wabash St, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Belgravia",
+        "status": "Stabilized",
+        "address": "405 N Wabash St",
+        "project": "Renelle",
+        "submarket": "River North",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.627,
+          41.8889
+        ],
+        "type": "Point"
+      },
+      "id": "2d94585f2d42a4db8574b7e4e970022e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 346000,
+        "comb_add": "221 W Harrison St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Wood Partners",
+        "status": "Stabilized",
+        "address": "221 W Harrison St",
+        "project": "Alta Grand Central",
+        "submarket": "West Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6342,
+          41.8741
+        ],
+        "type": "Point"
+      },
+      "id": "2f5c5267800512899686d1e547830412"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 60000,
+        "comb_add": "233 W North Ave, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Back Nine",
+        "status": "Lease Up",
+        "address": "233 W North Ave",
+        "project": "The Northland",
+        "submarket": "Old Town",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6359,
+          41.911
+        ],
+        "type": "Point"
+      },
+      "id": "2fbfbd0ee6aad73976186e0e86a30bb2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 320000,
+        "comb_add": "1140 S Wabash Ave, 60605, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "CA Ventures",
+        "status": "Lease Up",
+        "address": "1140 S Wabash Ave",
+        "project": "Eleven40",
+        "submarket": "South Loop",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.626,
+          41.869
+        ],
+        "type": "Point"
+      },
+      "id": "3029d2b3e4457d665297880961c778f3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 356000,
+        "comb_add": "353 W Grand St, 60642, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Onni",
+        "status": "Construction",
+        "address": "353 W Grand St",
+        "project": "Clark & Barlow",
+        "submarket": "River North",
+        "year": 2023
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6373,
+          41.8913
+        ],
+        "type": "Point"
+      },
+      "id": "30be8ba6f5df6cea0323f9f6c2c18351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 250000,
+        "comb_add": "435 N Michigan Ave, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Golub/CIM",
+        "status": "Construction",
+        "address": "435 N Michigan Ave",
+        "project": "Trib-Condo",
+        "submarket": "Streeterville",
+        "year": 2023
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6221,
+          41.8903
+        ],
+        "type": "Point"
+      },
+      "id": "30fc7d3363c3e55837b4fb0f2d892f6b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1490825,
+        "comb_add": "71 S Wacker Dr, 60654, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Pritzker",
+        "status": "Stabilized",
+        "address": "71 S Wacker Dr",
+        "project": "Hyatt",
+        "submarket": "West Loop",
+        "year": 2005
+      },
+      "geometry": {
+        "coordinates": [
+          -87.636,
+          41.8809
+        ],
+        "type": "Point"
+      },
+      "id": "317c29c5380015d34959575dec2a5f90"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1065000,
+        "comb_add": "444 N Lake St, 60606, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Hines",
+        "status": "Stabilized",
+        "address": "444 N Lake St",
+        "project": "River Point",
+        "submarket": "West Loop",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6393,
+          41.8862
+        ],
+        "type": "Point"
+      },
+      "id": "31e42241b0c17ac5e01751014133aac1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 64000,
+        "comb_add": "4525 N Kenmore Ave, 60640, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Morningside",
+        "status": "Lease Up",
+        "address": "4525 N Kenmore Ave",
+        "project": "Stewart School Lofts",
+        "submarket": "Uptown",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6558,
+          41.9644
+        ],
+        "type": "Point"
+      },
+      "id": "33d3000febc81538202353eabc0c0873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1302901,
+        "comb_add": "300 N LaSalle Dr, 60654, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Hines",
+        "status": "Stabilized",
+        "address": "300 N LaSalle Dr",
+        "project": "300 LaSalle",
+        "submarket": "River North",
+        "year": 2009
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6334,
+          41.8882
+        ],
+        "type": "Point"
+      },
+      "id": "33ff5fe787819f4e28910ca44c322e54"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 387000,
+        "comb_add": "1140 N Wells St 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Onni",
+        "status": "Construction",
+        "address": "1140 N Wells St",
+        "project": "OldTown Park - PH III",
+        "submarket": "Near North",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6359,
+          41.9022
+        ],
+        "type": "Point"
+      },
+      "id": "36286fa776d77791179230086dde2e18"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 49000,
+        "comb_add": "830 N Milwaukee Ave, 60642, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Akara",
+        "status": "Stabilized",
+        "address": "830 N Milwaukee Ave",
+        "project": "Linkt",
+        "submarket": "River West",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6567,
+          41.8969
+        ],
+        "type": "Point"
+      },
+      "id": "371d8b1a8e8a3e2330dbe716dda555b0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 279000,
+        "comb_add": "451 E Grand Ave, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Related",
+        "status": "Stabilized",
+        "address": "451 E Grand Ave",
+        "project": "One Bennett - Multi",
+        "submarket": "Streeterville",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6156,
+          41.8919
+        ],
+        "type": "Point"
+      },
+      "id": "3853b2706f314f0d58d5e7576d85e277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 92000,
+        "comb_add": "1200 N State Street, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Newcastle",
+        "status": "Construction",
+        "address": "1212 N State Street",
+        "project": "McFadden",
+        "submarket": "Gold Coast",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -87.629,
+          41.9042
+        ],
+        "type": "Point"
+      },
+      "id": "38db130c688e5048a27e71f5e675ab8e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 324000,
+        "comb_add": "840 W Blackhawk St, 60642, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Smithfield",
+        "status": "Stabilized",
+        "address": "840 W Blackhawk St",
+        "project": "SoNo",
+        "submarket": "Lincoln Park",
+        "year": 2012
+      },
+      "geometry": {
+        "coordinates": [
+          -87.65,
+          41.9085
+        ],
+        "type": "Point"
+      },
+      "id": "395acfd5ef6c5b12fc038160c52b0536"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 460000,
+        "comb_add": "435 N Michigan Ave, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Golub/CIM",
+        "status": "Construction",
+        "address": "435 N Michigan Ave",
+        "project": "Trib - Landmark",
+        "submarket": "Streeterville",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6238,
+          41.8903
+        ],
+        "type": "Point"
+      },
+      "id": "39cb4fbfd9f3d7da9406dd5cc019d437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 49000,
+        "comb_add": "847 N Larrabee St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Domus Group",
+        "status": "Stabilized",
+        "address": "847 N Larrabee St",
+        "project": "847 Larrabee",
+        "submarket": "Near North",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6427,
+          41.8981
+        ],
+        "type": "Point"
+      },
+      "id": "3b89b97883c68ba330f084df7c872c36"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 726000,
+        "comb_add": "211 N Harbor Drive, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Magellan / LendLease",
+        "status": "Construction",
+        "address": "211 N Harbor Drive",
+        "project": "Cirrus",
+        "submarket": "Lakeshore East",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6146,
+          41.8853
+        ],
+        "type": "Point"
+      },
+      "id": "3e3e5f4a888b6f571e17da48391439d0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 509000,
+        "comb_add": "340 N Orleans St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Magellan / Kennedy / Hines",
+        "status": "Stabilized",
+        "address": "340 N Orleans St",
+        "project": "WPW",
+        "submarket": "River North",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6383,
+          41.8876
+        ],
+        "type": "Point"
+      },
+      "id": "453ca47e1277e3baad5301b763e93796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 102000,
+        "comb_add": "8 E Huron St, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "CA Ventures",
+        "status": "Stabilized",
+        "address": "8 E Huron St",
+        "project": "State & Huron",
+        "submarket": "River North",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6276,
+          41.8949
+        ],
+        "type": "Point"
+      },
+      "id": "4617b8771720918111af7b08e326bacd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 38000,
+        "comb_add": "1825 W Montrose Ave, 60613, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Cedar Street",
+        "status": "Construction",
+        "address": "1825 W Montrose Ave",
+        "project": "Montrose Green",
+        "submarket": "Lakeview",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6755,
+          41.9614
+        ],
+        "type": "Point"
+      },
+      "id": "47886897dee19e5ce5539f7205618973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 199000,
+        "comb_add": "1457 N Halsted St, 60642, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Structured/Bucksbaum",
+        "status": "Stabilized",
+        "address": "1457 N Halsted St",
+        "project": "New City",
+        "submarket": "Lincoln Park",
+        "year": 2015
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6482,
+          41.908
+        ],
+        "type": "Point"
+      },
+      "id": "48cc990a7a249e757b321aff4edb3e15"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 138000,
+        "comb_add": "2340 N California Ave, 60647, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Savoy / Focus/ Hunt",
+        "status": "Stabilized",
+        "address": "2340 N California Ave",
+        "project": "Noca Blue",
+        "submarket": "Logan Square",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6977,
+          41.924
+        ],
+        "type": "Point"
+      },
+      "id": "4a07e86d7790762d3d47046f953693a4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 515000,
+        "comb_add": "345 E Wacker Dr, 60601, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Magellan",
+        "status": "Stabilized",
+        "address": "345 E Wacker Dr",
+        "project": "Coast",
+        "submarket": "Lakeshore East",
+        "year": 2013
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6184,
+          41.8874
+        ],
+        "type": "Point"
+      },
+      "id": "4a689edcc92ec18968cd21ffeafbd279"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 70000,
+        "comb_add": "811 W Fulton Market, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Shapack",
+        "status": "Stabilized",
+        "address": "811 W Fulton Market",
+        "project": "811 Fulton",
+        "submarket": "Fulton Market",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6478,
+          41.8865
+        ],
+        "type": "Point"
+      },
+      "id": "4af2f876b1d77a5a6a2a32c89000f103"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 52000,
+        "comb_add": "128 S Laflin St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Michigan Ave.",
+        "status": "Construction",
+        "address": "128 S Laflin St",
+        "project": "Tramco Pump",
+        "submarket": "Far West Loop",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6647,
+          41.8792
+        ],
+        "type": "Point"
+      },
+      "id": "4cae7e63a80ee8b6b816fe6355e35e28"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 27000,
+        "comb_add": "934 N Crosby St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Quest Realty",
+        "status": "Stabilized",
+        "address": "934 N Crosby St",
+        "project": "943 Crosby",
+        "submarket": "Near North",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6433,
+          41.9
+        ],
+        "type": "Point"
+      },
+      "id": "4dc5dc1ec90a98a12734e441a377069b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 358000,
+        "comb_add": "935 W Washington Blvd, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "ZOM Mid-Atlantic",
+        "status": "Lease Up",
+        "address": "935 W Washington Blvd",
+        "project": "Union West",
+        "submarket": "West Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6512,
+          41.8828
+        ],
+        "type": "Point"
+      },
+      "id": "4e6d03d776b6a1d150522c30e9f4c90b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 240000,
+        "comb_add": "625 W Division St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Gerding",
+        "status": "Stabilized",
+        "address": "625 W Division St",
+        "project": "Xavier",
+        "submarket": "Near North",
+        "year": 2015
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6443,
+          41.9035
+        ],
+        "type": "Point"
+      },
+      "id": "4ea226a7dd99ee4b6f981c56ba12a2bf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 2500000,
+        "comb_add": "433 W Van Buren St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "601 W",
+        "status": "Stabilized",
+        "address": "433 W Van Buren St",
+        "project": "Post Office",
+        "submarket": "West Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.63865,
+          41.87558
+        ],
+        "type": "Point"
+      },
+      "id": "4f8dd91202857c418fcfe4aa091764aa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 473000,
+        "comb_add": "540 N State St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Magellan",
+        "status": "Stabilized",
+        "address": "540 N State St",
+        "project": "Grand Plaza",
+        "submarket": "River North",
+        "year": 2002
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6283,
+          41.8921
+        ],
+        "type": "Point"
+      },
+      "id": "512f5596abb1f2b1928d6326ef893b68"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 300000,
+        "comb_add": "333 N Canal Street, 60606, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Bejco",
+        "status": "Stabilized",
+        "address": "333 N Canal Street",
+        "project": "Riverbend",
+        "submarket": "River West",
+        "year": 2002
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6396,
+          41.8875
+        ],
+        "type": "Point"
+      },
+      "id": "52027a0b3d06a81e2182d6c76154957a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 452000,
+        "comb_add": "726 S Wells St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "CMK",
+        "status": "Lease Up",
+        "address": "726 S Wells St",
+        "project": "Cooper",
+        "submarket": "Fulton Market",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6337,
+          41.873
+        ],
+        "type": "Point"
+      },
+      "id": "52db84311e36013be16b0bcf3a113585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 50000,
+        "comb_add": "33 S Aberdeen St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Steven Degraff",
+        "status": "Lease Up",
+        "address": "33 S Aberdeen St",
+        "project": "Monroe Aberdeen Place",
+        "submarket": "Fulton Market",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6546,
+          41.881
+        ],
+        "type": "Point"
+      },
+      "id": "536b0c7fc775cf3434bf7e7721c4ce7f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 120000,
+        "comb_add": "215 N Peoria St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Wislow/Julmy",
+        "status": "Construction",
+        "address": "215 N Peoria St",
+        "project": "215 N Peoria",
+        "submarket": "Fulton Market",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6495,
+          41.8861
+        ],
+        "type": "Point"
+      },
+      "id": "54dc149536e1fd2511488916e97f5a14"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 207000,
+        "comb_add": "1664 W Division St, 60622, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Centrum",
+        "status": "Lease Up",
+        "address": "1664 W Division St",
+        "project": "Wicker Park Connection",
+        "submarket": "Wicker Park",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6697,
+          41.9035
+        ],
+        "type": "Point"
+      },
+      "id": "572a77fd9918bfc6ea0b64feece6130d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 60000,
+        "comb_add": "1325 N Wells St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Sedgwick",
+        "status": "Stabilized",
+        "address": "1325 N Wells St",
+        "project": "1325 N Wells",
+        "submarket": "Old Town",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6342,
+          41.9065
+        ],
+        "type": "Point"
+      },
+      "id": "57968d2f4d873936dce228e0305f8038"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1027683,
+        "comb_add": "111 S Wacker Dr, 60606, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "TJBC",
+        "status": "Stabilized",
+        "address": "111 S Wacker Dr",
+        "project": "Deloitte",
+        "submarket": "West Loop",
+        "year": 2004
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6365,
+          41.8803
+        ],
+        "type": "Point"
+      },
+      "id": "58db1f95aefe2c4c13e96cefe282e52b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 76000,
+        "comb_add": "360 W Erie St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Belgravia",
+        "status": "Stabilized",
+        "address": "360 W Erie St",
+        "project": "Citizen Bar",
+        "submarket": "River North",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6381,
+          41.894
+        ],
+        "type": "Point"
+      },
+      "id": "599e4daf6283e0893795934378527a1c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 315000,
+        "comb_add": "1375 W Fulton Market St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Trammel Crow",
+        "status": "Stabilized",
+        "address": "1375 W Fulton Market St",
+        "project": "West End",
+        "submarket": "Fulton Market",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6618,
+          41.8862
+        ],
+        "type": "Point"
+      },
+      "id": "59be3ef21e1b8e352ad551c24af7c15a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 467000,
+        "comb_add": "225 N Columbus Dr, 60601, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Magellan",
+        "status": "Stabilized",
+        "address": "225 N Columbus Dr",
+        "project": "Aqua",
+        "submarket": "Lakeshore East",
+        "year": 2009
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6203,
+          41.8866
+        ],
+        "type": "Point"
+      },
+      "id": "59d1797c98d01b782ff0f00a617efe8c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 90000,
+        "comb_add": "12 W Maple St, Chicago, IL 60610",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Lasky/Pisor",
+        "status": "Construction",
+        "address": "12 W Maple St",
+        "project": "The Shops@",
+        "submarket": "Gold Coast",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -87.62892,
+          41.9021
+        ],
+        "type": "Point"
+      },
+      "id": "59e138744a49dcd5127dc51ddf4de971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 504000,
+        "comb_add": "111 W Wacker Dr, 60601, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Related",
+        "status": "Stabilized",
+        "address": "111 W Wacker Dr",
+        "project": "OneEleven",
+        "submarket": "Loop",
+        "year": 2014
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6314,
+          41.8865
+        ],
+        "type": "Point"
+      },
+      "id": "5a08c510b1b6f88c81b681605d9b2b2b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 500000,
+        "comb_add": "1326 S Michigan Ave, 60605, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "CIM / Murphy",
+        "status": "Construction",
+        "address": "1326 S Michigan Ave",
+        "project": "Paragon",
+        "submarket": "South Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6246,
+          41.8649
+        ],
+        "type": "Point"
+      },
+      "id": "5d2ca8fe5bd40dba10d2da21addf5659"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1500000,
+        "comb_add": "600 W Chicago, 60654, Chicago, IL",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Centrum",
+        "status": "Stabilized",
+        "address": "600 W Chicago",
+        "project": "600W",
+        "submarket": "River North",
+        "year": 2000
+      },
+      "geometry": {
+        "coordinates": [
+          -87.643502,
+          41.896838
+        ],
+        "type": "Point"
+      },
+      "id": "5d348295fde40c92a715ce11292c2076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 105000,
+        "comb_add": "710 W Grand Ave, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Wicker Park Apts.",
+        "status": "Stabilized",
+        "address": "710 W Grand Ave",
+        "project": "710 W Grand",
+        "submarket": "River West",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6464,
+          41.8914
+        ],
+        "type": "Point"
+      },
+      "id": "5f44b545e2a357a9b6e6f4ac9faa2905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 188000,
+        "comb_add": "220 W Illinois St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Gerding Edlin",
+        "status": "Stabilized",
+        "address": "220 W Illinois St",
+        "project": "Jones",
+        "submarket": "River North",
+        "year": 2015
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6352,
+          41.891
+        ],
+        "type": "Point"
+      },
+      "id": "5ff3b92ad785b55d6ad138e000c5d439"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 290000,
+        "comb_add": "1330 W Fulton Market, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "SBC",
+        "status": "Stabilized",
+        "address": "1330 W Fulton Market",
+        "project": "Fulton West",
+        "submarket": "Fulton Market",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6603,
+          41.887
+        ],
+        "type": "Point"
+      },
+      "id": "602f137ef2660e1788f24f05dfc90b32"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 40000,
+        "comb_add": "165 N Aberdeen St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "MCZ",
+        "status": "Stabilized",
+        "address": "165 N Aberdeen St",
+        "project": "165 N Aberdeen",
+        "submarket": "Fulton Market",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6542,
+          41.8853
+        ],
+        "type": "Point"
+      },
+      "id": "602fbeb5157db73dd8aea0ba48641161"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 55000,
+        "comb_add": "33 South Ashland Ave, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Michigan Ave.",
+        "status": "Stabilized",
+        "address": "33 S Ashland Ave",
+        "project": "Ashland Place",
+        "submarket": "Fulton Market",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6663,
+          41.8806
+        ],
+        "type": "Point"
+      },
+      "id": "61fca8475de03708b74ae1bab199385c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 409000,
+        "comb_add": "71 W Hubbard St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "AMLI",
+        "status": "Stabilized",
+        "address": "71 W Hubbard St",
+        "project": "AMLI",
+        "submarket": "River North",
+        "year": 2013
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6307,
+          41.8897
+        ],
+        "type": "Point"
+      },
+      "id": "62039e9e0d60989bc6ce9500e6744403"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 444000,
+        "comb_add": "633 N Wells St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Magellan",
+        "status": "Stabilized",
+        "address": "633 N Wells St",
+        "project": "Gallery",
+        "submarket": "River North",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6338,
+          41.8933
+        ],
+        "type": "Point"
+      },
+      "id": "64cf1052aac83863317de71a2d470e9f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 148000,
+        "comb_add": "1025 W Addison St, 60613, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Bucksbaum",
+        "status": "Lease Up",
+        "address": "1025 W Addison St",
+        "project": "Clark & Addison",
+        "submarket": "Lakeview",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6554,
+          41.9471
+        ],
+        "type": "Point"
+      },
+      "id": "6505c7364db8cbb50eac76a84848e4a1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 99000,
+        "comb_add": "1350 S Union Ave, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Property Markets Group",
+        "status": "Lease Up",
+        "address": "1350 S Union Ave",
+        "project": "X University Village",
+        "submarket": "University Village",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6449,
+          41.8651
+        ],
+        "type": "Point"
+      },
+      "id": "66622b268d0e4bae7f73b2015e98ea9e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 227000,
+        "comb_add": "500 N Milwaukee Ave, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Akara",
+        "status": "Stabilized",
+        "address": "500 N Milwaukee Ave",
+        "project": "Kenect",
+        "submarket": "River West",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6485,
+          41.8915
+        ],
+        "type": "Point"
+      },
+      "id": "66e1d3746e3aab617f4847195d5daeaa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 167000,
+        "comb_add": "11 S Green St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Sy Taxman",
+        "status": "Stabilized",
+        "address": "11 S Green St",
+        "project": "Gateway",
+        "submarket": "Far West Loop",
+        "year": 2015
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6482,
+          41.8815
+        ],
+        "type": "Point"
+      },
+      "id": "6993c067b33513424c93537e2b1ed3bb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 90000,
+        "comb_add": "400 W. Huron St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Smithfield",
+        "status": "Stabilized",
+        "address": "400 W. Huron St",
+        "project": "400 W Huron",
+        "submarket": "River North",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6387,
+          41.895
+        ],
+        "type": "Point"
+      },
+      "id": "6a46cb4135a8a512243bd5683ca1d831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 135000,
+        "comb_add": "1201 W Lake St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "McCaffery",
+        "status": "Lease Up",
+        "address": "1201 W Lake St",
+        "project": "Twelve01West",
+        "submarket": "Fulton Market",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6573,
+          41.885
+        ],
+        "type": "Point"
+      },
+      "id": "6bcc79fd10e6080591bed65b9d6d7df4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 479000,
+        "comb_add": "808 S Michigan Ave, 60605, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Oxford",
+        "status": "Construction",
+        "address": "808 S Michigan Ave",
+        "project": "Essex on the Park",
+        "submarket": "South Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6247,
+          41.8715
+        ],
+        "type": "Point"
+      },
+      "id": "6bda8e0a6d0d2198d893e4d0fecc36ec"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 227000,
+        "comb_add": "730 W Couch Pl, 60661, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Atlantic / Focus / Shapack",
+        "status": "Stabilized",
+        "address": "730 W Couch Pl",
+        "project": "Parker",
+        "submarket": "Fulton Market",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          -87.646512,
+          41.885308
+        ],
+        "type": "Point"
+      },
+      "id": "6e6c49312a4f4214444b899eeaf179fb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 45000,
+        "comb_add": "900 W Randolph St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Tucker",
+        "status": "Stabilized",
+        "address": "900 W Randolph St",
+        "project": "Spaces",
+        "submarket": "Fulton Market",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6501,
+          41.8846
+        ],
+        "type": "Point"
+      },
+      "id": "70441b20eed5779e1e95523bc56b16fb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 684000,
+        "comb_add": "549 West Grand Avenue, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Draper & Kraper",
+        "status": "Stabilized",
+        "address": "549 W Grand Avenue",
+        "project": "Kinzie Park",
+        "submarket": "River West",
+        "year": 2000
+      },
+      "geometry": {
+        "coordinates": [
+          -87.641262,
+          41.889893
+        ],
+        "type": "Point"
+      },
+      "id": "73d5e1e7b0d8c1a8d27de186418ae114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 240000,
+        "comb_add": "750 N Hudson Ave, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Onni",
+        "status": "Stabilized",
+        "address": "750 N Hudson Ave",
+        "project": "Hudson",
+        "submarket": "River North",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6413,
+          41.8963
+        ],
+        "type": "Point"
+      },
+      "id": "74d708c846f21dd583bc0f862a87dabd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 46000,
+        "comb_add": "1750 W Wrightwood Ave, 60614, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Broder Prop.",
+        "status": "Lease Up",
+        "address": "1750 W Wrightwood Ave",
+        "project": "Norweta Row",
+        "submarket": "Bucktown",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6716,
+          41.9288
+        ],
+        "type": "Point"
+      },
+      "id": "75cbdd02f0cab74760a7383532dd12fe"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 134000,
+        "comb_add": "3833 N Broadway, 60613, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "DLG",
+        "status": "Construction",
+        "address": "3833 N Broadway",
+        "project": "3833 Broadway",
+        "submarket": "Lakeview",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6497,
+          41.9523
+        ],
+        "type": "Point"
+      },
+      "id": "782bd50381a779d29311d473f9663400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 198000,
+        "comb_add": "222 W Erie St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "McCaffery",
+        "status": "Stabilized",
+        "address": "222 W Erie St",
+        "project": "Flair Tower",
+        "submarket": "River North",
+        "year": 2010
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6355,
+          41.8941
+        ],
+        "type": "Point"
+      },
+      "id": "787cc21193111573fbdd94fde0235bac"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 337000,
+        "comb_add": "1140 N Wells St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Onni",
+        "status": "Construction",
+        "address": "1140 N Wells St",
+        "project": "OldTown Park - PH II",
+        "submarket": "Near North",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6348,
+          41.9023
+        ],
+        "type": "Point"
+      },
+      "id": "7a7b7dbf3bd227d8a753069049c9f3c0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 398000,
+        "comb_add": "340 E North Water St, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "DRW",
+        "status": "Stabilized",
+        "address": "340 E North Water St",
+        "project": "North Water",
+        "submarket": "Streeterville",
+        "year": 2015
+      },
+      "geometry": {
+        "coordinates": [
+          -87.619,
+          41.8898
+        ],
+        "type": "Point"
+      },
+      "id": "7bbbddf2a8a666ea307d01cd21414d34"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 445000,
+        "comb_add": "300 N Canal St, 60661, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Fifield",
+        "status": "Stabilized",
+        "address": "300 N Canal St",
+        "project": "Left Bank",
+        "submarket": "River West",
+        "year": 2006
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6403,
+          41.8873
+        ],
+        "type": "Point"
+      },
+      "id": "7d53074eb5c1549c3edafbf6ce166a86"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 50000,
+        "comb_add": "412 N Wells St, 60654, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Centrum",
+        "status": "Stabilized",
+        "address": "412 N Wells St",
+        "project": "RxBar",
+        "submarket": "River North",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6343,
+          41.8898
+        ],
+        "type": "Point"
+      },
+      "id": "7de4da8f8a1af965d34db4da15e24c65"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 350000,
+        "comb_add": "765 W Adams St, 60661, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "White Oak",
+        "status": "Stabilized",
+        "address": "765 W Adams St",
+        "project": "Arkadia",
+        "submarket": "Far West Loop",
+        "year": 2015
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6468,
+          41.879
+        ],
+        "type": "Point"
+      },
+      "id": "7fd429af5edaacf36e589450e92da401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 230000,
+        "comb_add": "800 N Clark St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Cedar St",
+        "status": "Stabilized",
+        "address": "800 N Clark St",
+        "project": "Bush Temple",
+        "submarket": "River North",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6314,
+          41.8967
+        ],
+        "type": "Point"
+      },
+      "id": "8072bc7a178de4dc654c55a12d5c5751"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 308000,
+        "comb_add": "1035 W Van Buren St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Related",
+        "status": "Stabilized",
+        "address": "1035 W Van Buren St",
+        "project": "Landmark",
+        "submarket": "Far West Loop",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6533,
+          41.8764
+        ],
+        "type": "Point"
+      },
+      "id": "81a51b5cec1bd481c08da21ec71c4277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 206055,
+        "comb_add": "145 S Wells St, 60606, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Moceri & Roszak",
+        "status": "Stabilized",
+        "address": "145 S Wells St",
+        "project": "145 S Wells",
+        "submarket": "Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6334,
+          41.8798
+        ],
+        "type": "Point"
+      },
+      "id": "832ee23c1e4b2f83bcd61b049086c974"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 2500000,
+        "comb_add": "222 W Merchandise Mart Plaza, 60606, Chicago, IL",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Vornado",
+        "status": "Stabilized",
+        "address": "222 W Merchandise Mart Plaza",
+        "project": "The Mart",
+        "submarket": "River North",
+        "year": 2014
+      },
+      "geometry": {
+        "coordinates": [
+          -87.636229,
+          41.888812
+        ],
+        "type": "Point"
+      },
+      "id": "8387f9dc77bddb82b04c9f37530fd6c4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1300000,
+        "comb_add": "343 W Wolf Point Plaza, 60654, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Hines",
+        "status": "Construction",
+        "address": "343 W Wolf Point Plaza",
+        "project": "Salesforce",
+        "submarket": "River North",
+        "year": 2024
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6377,
+          41.887
+        ],
+        "type": "Point"
+      },
+      "id": "8582bd6329bf65947229c19264049885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 188000,
+        "comb_add": "740 N Aberdeen St, 60642, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Fifield",
+        "status": "Construction",
+        "address": "740 N Aberdeen St",
+        "project": "740 N Aberdeen",
+        "submarket": "River West",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6558,
+          41.8958
+        ],
+        "type": "Point"
+      },
+      "id": "882ec7f5b2333812906ee2335d14486c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 240000,
+        "comb_add": "50 E Randolph St, 60601, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Moceri & Roszak",
+        "status": "Construction",
+        "address": "50 E Randolph St",
+        "project": "50 E Randolph",
+        "submarket": "East Loop",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6259,
+          41.8848
+        ],
+        "type": "Point"
+      },
+      "id": "8892097a24f3076a1809b7296c8015ac"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 402000,
+        "comb_add": "201 N Garland Ct, 60601, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "TJBC",
+        "status": "Stabilized",
+        "address": "201 N Garland Ct",
+        "project": "MILA",
+        "submarket": "Loop",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6248,
+          41.8861
+        ],
+        "type": "Point"
+      },
+      "id": "8980bbefeb5ec50b16b9201304b8d65f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 97000,
+        "comb_add": "800 N Milwaukee Ave, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Steve Lipe",
+        "status": "Construction",
+        "address": "800 N Milwaukee Ave",
+        "project": "800 N Milwaukee",
+        "submarket": "River West",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -87.656,
+          41.8964
+        ],
+        "type": "Point"
+      },
+      "id": "8b8461055dd7a1ed5c4cd81d5723dacd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 540000,
+        "comb_add": "2365 N Lincoln Ave, 60614, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Hines / McCaffrey",
+        "status": "Stabilized",
+        "address": "2365 N Lincoln Ave",
+        "project": "Lincoln Common",
+        "submarket": "Lincoln Park",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6481,
+          41.9248
+        ],
+        "type": "Point"
+      },
+      "id": "8bb3e1e9056cf0aebd0dd39464a5f778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 202000,
+        "comb_add": "915 N Orleans St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Ascend",
+        "status": "Stabilized",
+        "address": "915 N Orleans St",
+        "project": "Niche 905",
+        "submarket": "Near North",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6371,
+          41.8991
+        ],
+        "type": "Point"
+      },
+      "id": "8c67ab0b67a0b11636c8eed4698dc4f2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 848000,
+        "comb_add": "555 W Kinzie St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Fifield",
+        "status": "Stabilized",
+        "address": "555 W Kinzie St",
+        "project": "Alta",
+        "submarket": "River West",
+        "year": 2010
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6422,
+          41.8887
+        ],
+        "type": "Point"
+      },
+      "id": "8c745b82067c03cd0009ca4eb41d2315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1350000,
+        "comb_add": "225 S Canal St, 60606, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "RIDC",
+        "status": "Construction",
+        "address": "225 S Canal St",
+        "project": "Union Station",
+        "submarket": "West Loop",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6407,
+          41.8778
+        ],
+        "type": "Point"
+      },
+      "id": "8edaf16e155ca75e2494d4524cdd7c78"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 220000,
+        "comb_add": "2500 N Milwaukee, 60647, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Fifield / Nationwide",
+        "status": "Construction",
+        "address": "2500 N Milwaukee",
+        "project": "Logans Crossing",
+        "submarket": "Logan Square",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.7038,
+          41.9266
+        ],
+        "type": "Point"
+      },
+      "id": "90e9861ff7c966d017e5727adb55854a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 158000,
+        "comb_add": "111 S Peoria St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "LG Development",
+        "status": "Stabilized",
+        "address": "111 S Peoria St",
+        "project": "Illume",
+        "submarket": "Far West Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6493,
+          41.88
+        ],
+        "type": "Point"
+      },
+      "id": "9167580be38cac3cc668f7cc059ae2d8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 332000,
+        "comb_add": "73 E Lake St, 60601, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "M&R",
+        "status": "Stabilized",
+        "address": "73 E Lake St",
+        "project": "73 E Lake",
+        "submarket": "Loop",
+        "year": 2014
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6254,
+          41.8855
+        ],
+        "type": "Point"
+      },
+      "id": "921edc044989d1aac1b9e3e72a3830c4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 58000,
+        "comb_add": "61 E Banks St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Draper & Kraper",
+        "status": "Stabilized",
+        "address": "61 E Banks St",
+        "project": "61 East Banks",
+        "submarket": "Gold Coast",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6278,
+          41.9067
+        ],
+        "type": "Point"
+      },
+      "id": "9306b722954ca5b3f986ff269566a51b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 792000,
+        "comb_add": "113 E Roosevelt Rd, 60605, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Crescent Heights",
+        "status": "Construction",
+        "address": "113 E Roosevelt Rd",
+        "project": "Nema Chicago",
+        "submarket": "South Loop",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6231,
+          41.867
+        ],
+        "type": "Point"
+      },
+      "id": "937a9585d07b27b6164959d733fa34eb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 494000,
+        "comb_add": "500 N Lake Shore Dr, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Related",
+        "status": "Stabilized",
+        "address": "500 N Lake Shore Dr",
+        "project": "500 N Lake Shore",
+        "submarket": "Streeterville",
+        "year": 2013
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6147,
+          41.8915
+        ],
+        "type": "Point"
+      },
+      "id": "94f6cea4ecae424d6f3397960f067ceb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 250000,
+        "comb_add": "1225 N Wells St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "JDL",
+        "status": "Stabilized",
+        "address": "1225 N Wells St",
+        "project": "1225 Old Town",
+        "submarket": "Old Town",
+        "year": 2012
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6341,
+          41.9047
+        ],
+        "type": "Point"
+      },
+      "id": "9547b3bdeb66dcacf238d5e8b8b0584c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 820000,
+        "comb_add": "151 N Franklin St, 60606, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "TJBC",
+        "status": "Stabilized",
+        "address": "151 N Franklin St",
+        "project": "CNA",
+        "submarket": "West Loop",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6349,
+          41.8848
+        ],
+        "type": "Point"
+      },
+      "id": "95622ed0406a5f67761a0cce0bf00698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 70000,
+        "comb_add": "1050 W Monroe St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Michigan Ave.",
+        "status": "Lease Up",
+        "address": "1050 W Monroe St",
+        "project": "Monroe Aberdeen Place",
+        "submarket": "Fulton Market",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6534,
+          41.8805
+        ],
+        "type": "Point"
+      },
+      "id": "96d699b7d52238e07d3eaeac1672bb14"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 42000,
+        "comb_add": "1111 W Washington Blvd, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Peerless",
+        "status": "Construction",
+        "address": "1111 W Washington Blvd",
+        "project": "Hayden",
+        "submarket": "Fulton Market",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6546,
+          41.8828
+        ],
+        "type": "Point"
+      },
+      "id": "98516433b4e4ba900630abec08b38fdc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 44000,
+        "comb_add": "900 W Washington, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Peerless",
+        "status": "Lease Up",
+        "address": "900 W Washington",
+        "project": "900 W",
+        "submarket": "Fulton Market",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6501,
+          41.8833
+        ],
+        "type": "Point"
+      },
+      "id": "989e5fbb1abb923cf38a862ed6e880bd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 282000,
+        "comb_add": "900 W Huron St, 60642, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Waterton",
+        "status": "Stabilized",
+        "address": "900 W Huron St",
+        "project": "Mondial",
+        "submarket": "River West",
+        "year": 2009
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6505,
+          41.8953
+        ],
+        "type": "Point"
+      },
+      "id": "9995eb60c08042f3408b6f3e21caf59f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 221000,
+        "comb_add": "469 W Huron St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "M&R",
+        "status": "Stabilized",
+        "address": "469 W Huron St",
+        "project": "Parc Huron",
+        "submarket": "River North",
+        "year": 2010
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6412,
+          41.8945
+        ],
+        "type": "Point"
+      },
+      "id": "9a9a6b8981385f6116bd73e509e2bc9f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 440000,
+        "comb_add": "360 W Hubbard St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Habitat",
+        "status": "Stabilized",
+        "address": "360 W Hubbard St",
+        "project": "Hubbard Place",
+        "submarket": "River North",
+        "year": 2013
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6385,
+          41.8904
+        ],
+        "type": "Point"
+      },
+      "id": "9bdae13d42e437fe6c65fc985c515fb4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 68000,
+        "comb_add": "360 W Superior St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Ascend",
+        "status": "Stabilized",
+        "address": "360 W Superior St",
+        "project": "Superior House",
+        "submarket": "River North",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6381,
+          41.8958
+        ],
+        "type": "Point"
+      },
+      "id": "9ec0616ffc89a2797d737c47acebde13"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1225000,
+        "comb_add": "150 N Riverside Plaza, 60606, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "RIDC",
+        "status": "Stabilized",
+        "address": "150 N Riverside Plaza",
+        "project": "150 Riverside",
+        "submarket": "West Loop",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6384,
+          41.8851
+        ],
+        "type": "Point"
+      },
+      "id": "a01d41b2e7b105f8339625ce83e9f46a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 390000,
+        "comb_add": "100 W Division St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Fifield",
+        "status": "Stabilized",
+        "address": "100 W Division St",
+        "project": "Sinclair",
+        "submarket": "Gold Coast",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6309,
+          41.9039
+        ],
+        "type": "Point"
+      },
+      "id": "a3d0bc0925cd63a6dfc168b0bf304a9f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 820915,
+        "comb_add": "1 S Dearborn St, 60603, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Hines",
+        "status": "Stabilized",
+        "address": "1 S Dearborn St",
+        "project": "Sidley",
+        "submarket": "Loop",
+        "year": 2005
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6287,
+          41.8816
+        ],
+        "type": "Point"
+      },
+      "id": "a4e14932d7d603d73845f7368f8cf123"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 276000,
+        "comb_add": "805 N LaSalle Dr, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Smithfield",
+        "status": "Stabilized",
+        "address": "805 N LaSalle Dr",
+        "project": "Eight-O-Five",
+        "submarket": "Near North",
+        "year": 2015
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6325,
+          41.897
+        ],
+        "type": "Point"
+      },
+      "id": "a617f4e2a19bd725d7e89cd0b72ebb3a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 794000,
+        "comb_add": "23 W Chicago Ave, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "JDL",
+        "status": "Construction",
+        "address": "23 W Chicago Ave",
+        "project": "1chicago - Multi",
+        "submarket": "River North",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6294,
+          41.8964
+        ],
+        "type": "Point"
+      },
+      "id": "a70dae94967e9a62435101a8a9fca70a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 199000,
+        "comb_add": "165 N Des Plaines St, 60661, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Gerding Edlin",
+        "status": "Stabilized",
+        "address": "165 N Des Plaines St",
+        "project": "Emme",
+        "submarket": "West Loop",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6436,
+          41.885
+        ],
+        "type": "Point"
+      },
+      "id": "a92d1642881fdb7e488068bdcd89216b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 132000,
+        "comb_add": "1980 N Milwaukee, 60647, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Clayco",
+        "status": "Stabilized",
+        "address": "1980 N Milwaukee",
+        "project": "AM 1980",
+        "submarket": "West Town",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6886,
+          41.9172
+        ],
+        "type": "Point"
+      },
+      "id": "a95fba3b219ae0b286623bf94fc3d86b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 130000,
+        "comb_add": "451 E Grand Ave, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Related",
+        "status": "Stabilized",
+        "address": "451 E Grand Ave",
+        "project": "One Bennett - Condo",
+        "submarket": "Streeterville",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6156,
+          41.8919
+        ],
+        "type": "Point"
+      },
+      "id": "a98cedba0b0d3292b4e7d531f6ef9730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 265000,
+        "comb_add": "215 W Lake St, 60606, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Moceri/Rozak",
+        "status": "Stabilized",
+        "address": "215 W Lake St",
+        "project": "Linea",
+        "submarket": "Loop",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6346,
+          41.8855
+        ],
+        "type": "Point"
+      },
+      "id": "aa619d178de83541df1cf65b9950c533"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1152953,
+        "comb_add": "155 N Wacker Dr, 60606, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "TJBC",
+        "status": "Stabilized",
+        "address": "155 N Wacker Dr",
+        "project": "155 Wacker",
+        "submarket": "West Loop",
+        "year": 2009
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6366,
+          41.8847
+        ],
+        "type": "Point"
+      },
+      "id": "aa7f2cebdd1ac4ba14f80b8b5320a1de"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 547000,
+        "comb_add": "333 N Green St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "SBC",
+        "status": "Construction",
+        "address": "333 N Green St",
+        "project": "WPP",
+        "submarket": "Fulton Market",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6479,
+          41.8877
+        ],
+        "type": "Point"
+      },
+      "id": "aba0c5c6fd7d1eeda045fcb3268cf1fe"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 100000,
+        "comb_add": "734 W Sheridan Rd, 60613, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Vermillion",
+        "status": "Lease Up",
+        "address": "734 W Sheridan Rd",
+        "project": "Viridian",
+        "submarket": "Lakeview",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6494,
+          41.953
+        ],
+        "type": "Point"
+      },
+      "id": "abbd99fa3dc6766569dcb24bc54e5318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 425000,
+        "comb_add": "625 W Adams St, 60661, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "White Oak",
+        "status": "Stabilized",
+        "address": "625 W Adams St",
+        "project": "CDW",
+        "submarket": "West Loop",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6436,
+          41.8786
+        ],
+        "type": "Point"
+      },
+      "id": "ada6dac1be8aec51ce27a19d463f77c9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 190000,
+        "comb_add": "1045 W Washington Blvd, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Belgravia",
+        "status": "Lease Up",
+        "address": "1045 W Washington Blvd",
+        "project": "CA Washington",
+        "submarket": "Fulton Market",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6539,
+          41.8827
+        ],
+        "type": "Point"
+      },
+      "id": "b4b2ef980ea033bca88de827f05590c1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 226000,
+        "comb_add": "734 N Milwaukee Ave, 60642, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Tandem",
+        "status": "Stabilized",
+        "address": "734 N Milwaukee Ave",
+        "project": "Avenir",
+        "submarket": "River West",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6539,
+          41.8945
+        ],
+        "type": "Point"
+      },
+      "id": "b4c2e3346f9aca0289006cd110ef5fbe"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 254000,
+        "comb_add": "1415 N Sedgwick St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Marc Realty",
+        "status": "Construction",
+        "address": "1415 N Sedgwick St",
+        "project": "Noble Horse",
+        "submarket": "Old Town",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -87.638,
+          41.9081
+        ],
+        "type": "Point"
+      },
+      "id": "b66184b90c4b3e677e69ba08584d0354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 490000,
+        "comb_add": "545 N McClurg Ct, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Golub / GID",
+        "status": "Stabilized",
+        "address": "545 N McClurg Ct",
+        "project": "Moment",
+        "submarket": "Streeterville",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6177,
+          41.8922
+        ],
+        "type": "Point"
+      },
+      "id": "b7b7641a63b6b2ba4b6542c96957142e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 20000,
+        "comb_add": "57 W Erie St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "LG Development",
+        "status": "Construction",
+        "address": "57 W Erie St",
+        "project": "57 W Erie",
+        "submarket": "River North",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6303,
+          41.8938
+        ],
+        "type": "Point"
+      },
+      "id": "b87b6f034a951dc91ba03656b1745e6c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 350000,
+        "comb_add": "353 N Desplaines St, 60661, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Fifield",
+        "status": "Stabilized",
+        "address": "353 N Desplaines St",
+        "project": "Echelon",
+        "submarket": "River West",
+        "year": 2008
+      },
+      "geometry": {
+        "coordinates": [
+          -87.644,
+          41.8884
+        ],
+        "type": "Point"
+      },
+      "id": "b8bc153519e339e67f1fd4e6e1533835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 82000,
+        "comb_add": "676 N Kingsbury St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "LG Development",
+        "status": "Stabilized",
+        "address": "676 N Kingsbury St",
+        "project": "Ronsley",
+        "submarket": "River North",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6417,
+          41.894
+        ],
+        "type": "Point"
+      },
+      "id": "b9c8f7c1d8ccbf1cd5a1f2ec79fd24b3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 586000,
+        "comb_add": "845 W Madison St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "TJBC",
+        "status": "Lease Up",
+        "address": "845 W Madison St",
+        "project": "H2O",
+        "submarket": "Far West Loop",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6491,
+          41.8809
+        ],
+        "type": "Point"
+      },
+      "id": "ba46621f67eb1d5caf629206e0f86a44"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 149000,
+        "comb_add": "676 N LaSalle Dr, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Cedar St",
+        "status": "Lease Up",
+        "address": "676 N LaSalle Dr",
+        "project": "The Ardus",
+        "submarket": "River North",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.633,
+          41.8945
+        ],
+        "type": "Point"
+      },
+      "id": "bc3b24bb8ce89799bedaef8c35f45dc6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 219000,
+        "comb_add": "412 N Wells St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Centrum",
+        "status": "Stabilized",
+        "address": "412 N Wells St",
+        "project": "Hubbard 221",
+        "submarket": "River North",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6349,
+          41.8897
+        ],
+        "type": "Point"
+      },
+      "id": "bc74d7941119c8a2b829871cbd73b13f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 180000,
+        "comb_add": "488 N LaSalle St, 60654, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "CA Ventures",
+        "status": "Construction",
+        "address": "488 N LaSalle St",
+        "project": "English",
+        "submarket": "River North",
+        "year": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6329,
+          41.8904
+        ],
+        "type": "Point"
+      },
+      "id": "c42ef78b8088ae42c528edcb5451bd65"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 41790,
+        "comb_add": "1100 N Ashland Ave, 60622, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Wicker Park Apartments",
+        "status": "Lease Up",
+        "address": "1100 N Ashland Ave",
+        "project": "East Village Lofts",
+        "submarket": "Noble Square",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6675,
+          41.9013
+        ],
+        "type": "Point"
+      },
+      "id": "c7bd857ddada347dda26b920d81c5f3d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 323000,
+        "comb_add": "200 E Illinois St, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Optima",
+        "status": "Stabilized",
+        "address": "200 E Illinois St",
+        "project": "Aston",
+        "submarket": "Streeterville",
+        "year": 2013
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6222,
+          41.8912
+        ],
+        "type": "Point"
+      },
+      "id": "c832ea1ec06ad7227be4b64ad4af66ea"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 250000,
+        "comb_add": "310 N Sangamon St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Tishman",
+        "status": "Construction",
+        "address": "310 N Sangamon St",
+        "project": "310 N Sangamon",
+        "submarket": "Fulton Market",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.651582,
+          41.887408
+        ],
+        "type": "Point"
+      },
+      "id": "cc7184e1557fed2fa7463db81a197976"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 363000,
+        "comb_add": "833 N Clark St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Lincoln / Ryan",
+        "status": "Stabilized",
+        "address": "833 N Clark St",
+        "project": "Aurelien",
+        "submarket": "Gold Coast",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6309,
+          41.8977
+        ],
+        "type": "Point"
+      },
+      "id": "cdbff0d020b10a5465108a12ee9e076e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 70000,
+        "comb_add": "4 E Elm St, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "DRW",
+        "status": "Stabilized",
+        "address": "4 E Elm St",
+        "project": "4 E Elm",
+        "submarket": "Gold Coast",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6285,
+          41.9032
+        ],
+        "type": "Point"
+      },
+      "id": "cdd27ef7e3efc596035fa2d08d890fdb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 180000,
+        "comb_add": "675 N Wells St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Lennar",
+        "status": "Stabilized",
+        "address": "675 N Wells St",
+        "project": "Marlowe",
+        "submarket": "River North",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.634,
+          41.8946
+        ],
+        "type": "Point"
+      },
+      "id": "cef49263b76e70d70ec6c4ab6ec0c264"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 62000,
+        "comb_add": "146 W Erie St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Sedgwick",
+        "status": "Stabilized",
+        "address": "146 W Erie St",
+        "project": "Bentham",
+        "submarket": "River North",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6331,
+          41.8942
+        ],
+        "type": "Point"
+      },
+      "id": "d18639a237cc5b4d427e8f1559d7c841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 263000,
+        "comb_add": "1361 W Lake St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Marquette",
+        "status": "Stabilized",
+        "address": "1361 W Lake St",
+        "project": "The Mason",
+        "submarket": "Fulton Market",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6612,
+          41.8852
+        ],
+        "type": "Point"
+      },
+      "id": "d24e7bd16369a7f3e3831a122068e611"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 218000,
+        "comb_add": "210 N Carpenter St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "SBC",
+        "status": "Stabilized",
+        "address": "210 N Carpenter St",
+        "project": "Vendor Village",
+        "submarket": "Fulton Market",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6539,
+          41.8858
+        ],
+        "type": "Point"
+      },
+      "id": "d40791230e08d95bcc9b77fb5118bac2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 290000,
+        "comb_add": "300 N Michigan Ave, 60601, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Magellan / SBC",
+        "status": "Construction",
+        "address": "300 N Michigan Ave",
+        "project": "Walgreens NMA",
+        "submarket": "Loop",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -87.625,
+          41.887
+        ],
+        "type": "Point"
+      },
+      "id": "d542e420cdcb1345aff0b6e4e4f2ac1e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 307000,
+        "comb_add": "347 W Chestnut St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Fifield",
+        "status": "Stabilized",
+        "address": "347 W Chestnut St",
+        "project": "NEXT",
+        "submarket": "Near North",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6376,
+          41.8978
+        ],
+        "type": "Point"
+      },
+      "id": "d56320b5e9bca0945511301470672862"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 200000,
+        "comb_add": "1515 W Webster Ave, 606014, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "SBC",
+        "status": "Stabilized",
+        "address": "1515 W Webster Ave",
+        "project": "CH Robinson",
+        "submarket": "Lincoln Park",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6665,
+          41.9208
+        ],
+        "type": "Point"
+      },
+      "id": "d732c6933f996738684805387f34bf1e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1173643,
+        "comb_add": "353 N Clark St, 60654, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Mesirow",
+        "status": "Stabilized",
+        "address": "353 N Clark St",
+        "project": "353 Clark",
+        "submarket": "River North",
+        "year": 2009
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6303,
+          41.8889
+        ],
+        "type": "Point"
+      },
+      "id": "d8e1144bc1ebc50ef36f75c961004f60"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 656500,
+        "comb_add": "167 N Green St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Shapack",
+        "status": "Construction",
+        "address": "167 N Green St",
+        "project": "Spectre",
+        "submarket": "Fulton Market",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.648058,
+          41.884999
+        ],
+        "type": "Point"
+      },
+      "id": "da7551baaaf1eeca90b4a2022880d235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 50000,
+        "comb_add": "1435 N Wells St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "LG Development",
+        "status": "Stabilized",
+        "address": "1435 N Wells St",
+        "project": "1435 N Wells",
+        "submarket": "Old Town",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6343,
+          41.9087
+        ],
+        "type": "Point"
+      },
+      "id": "db7830a16a8b094364a3545b483414ee"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 694000,
+        "comb_add": "25 W Randolph St, 60602, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Golub/CIM",
+        "status": "Stabilized",
+        "address": "25 W Randolph St",
+        "project": "Marquee",
+        "submarket": "Loop",
+        "year": 2016
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6288,
+          41.8843
+        ],
+        "type": "Point"
+      },
+      "id": "e0b7b349c04d6c36f2fad5664b8775e1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 59000,
+        "comb_add": "2701 W Armitage, 60647, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Eco Development",
+        "status": "Stabilized",
+        "address": "2701 W Armitage",
+        "project": "2701 West Armitage",
+        "submarket": "West Town",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6911,
+          41.9178
+        ],
+        "type": "Point"
+      },
+      "id": "e0d1dd67aff7929025699f7cd7989e16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 1300000,
+        "comb_add": "110 N Wacker Dr, 60606, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "RIDC",
+        "status": "Construction",
+        "address": "110 N Wacker Dr",
+        "project": "Bank America",
+        "submarket": "West Loop",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6375,
+          41.8837
+        ],
+        "type": "Point"
+      },
+      "id": "e1126b31fbf69f5a14eaef280de574ea"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 496000,
+        "comb_add": "365 N Halsted St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Fifield",
+        "status": "Stabilized",
+        "address": "365 N Halsted St",
+        "project": "K2",
+        "submarket": "River West",
+        "year": 2013
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6468,
+          41.8887
+        ],
+        "type": "Point"
+      },
+      "id": "e2af2b839df591262224e475c548a971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 304800,
+        "comb_add": "811 W Agatite Ave, 60640, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "JDL",
+        "status": "Lease Up",
+        "address": "811 W Agatite Ave",
+        "project": "Eight Eleven Uptown",
+        "submarket": "Uptown",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6502,
+          41.9627
+        ],
+        "type": "Point"
+      },
+      "id": "e2deca0ae5601ed1530782c45693244a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 484000,
+        "comb_add": "220 E Illinois St, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Optima",
+        "status": "Stabilized",
+        "address": "220 E Illinois St",
+        "project": "Optima",
+        "submarket": "Streeterville",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6215,
+          41.891
+        ],
+        "type": "Point"
+      },
+      "id": "e326b167ee931069e87205f7c05505f2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 191000,
+        "comb_add": "930 W Altgeld St, 60614, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Baker Development",
+        "status": "Lease Up",
+        "address": "930 W Altgeld St",
+        "project": "Elevate",
+        "submarket": "Lincoln Park",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.652,
+          41.9271
+        ],
+        "type": "Point"
+      },
+      "id": "e4ffc3395f5c1c51479e8a7c94cbc7c4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 148000,
+        "comb_add": "808 W Van Buren St, 60661, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Loukas",
+        "status": "Construction",
+        "address": "808 W Van Buren St",
+        "project": "808 Van Buren",
+        "submarket": "Far West Loop",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6474,
+          41.8768
+        ],
+        "type": "Point"
+      },
+      "id": "e5a527aea49ca01c2bafdfd8735cdda6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 223000,
+        "comb_add": "123 N Des Plaines St, 60661, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Marquette",
+        "status": "Stabilized",
+        "address": "123 N Des Plaines St",
+        "project": "Catalyst",
+        "submarket": "West Loop",
+        "year": 2014
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6439,
+          41.8837
+        ],
+        "type": "Point"
+      },
+      "id": "e5d68d4e285e8a21b2ea6d152c3d271b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 69000,
+        "comb_add": "301 W North Ave, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Sedgwick",
+        "status": "Stabilized",
+        "address": "301 W North Ave",
+        "project": "301 North",
+        "submarket": "Old Town",
+        "year": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6375,
+          41.911
+        ],
+        "type": "Point"
+      },
+      "id": "e5e7dbdfca5796b584f9c17317aeb9f6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 216000,
+        "comb_add": "1164 W Madison St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Ascend",
+        "status": "Stabilized",
+        "address": "1164 W Madison St",
+        "project": "Madison/Racine",
+        "submarket": "West Loop",
+        "year": 2014
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6572,
+          41.8819
+        ],
+        "type": "Point"
+      },
+      "id": "e64d7e50832bd63a0528244d1a56f541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 363000,
+        "comb_add": "1001 W Chicago Ave, 60642, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Bond Companies",
+        "status": "Stabilized",
+        "address": "1001 W Chicago Ave",
+        "project": "Spoke",
+        "submarket": "River West",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.653,
+          41.896
+        ],
+        "type": "Point"
+      },
+      "id": "e99b2211cfd495a45ccc3036b3c30ee0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 531190,
+        "comb_add": "1000 W Fulton Market, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "SBC",
+        "status": "Stabilized",
+        "address": "1000 W Fulton Market",
+        "project": "Google",
+        "submarket": "Fulton Market",
+        "year": 2015
+      },
+      "geometry": {
+        "coordinates": [
+          -87.652738,
+          41.886858
+        ],
+        "type": "Point"
+      },
+      "id": "eb0db11ca5fdbc558d301805d7796c01"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 410000,
+        "comb_add": "520 N Kingsbury St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Habitat",
+        "status": "Stabilized",
+        "address": "520 N Kingsbury St",
+        "project": "Kingsbury Plaza",
+        "submarket": "River North",
+        "year": 2007
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6403,
+          41.8911
+        ],
+        "type": "Point"
+      },
+      "id": "ec050c7f49ab4dba5b889013a41078e8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 150000,
+        "comb_add": "23 W Chicago Ave, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "JDL",
+        "status": "Construction",
+        "address": "23 W Chicago Ave",
+        "project": "1chicago - Condo",
+        "submarket": "River North",
+        "year": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6285,
+          41.8958
+        ],
+        "type": "Point"
+      },
+      "id": "ee41f6fda1d06d8ca03a5949c04bf886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 367000,
+        "comb_add": "845 N State St, 60610, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Newcastle",
+        "status": "Stabilized",
+        "address": "845 N State St",
+        "project": "State & Chestnut",
+        "submarket": "Gold Coast",
+        "year": 2015
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6285,
+          41.8981
+        ],
+        "type": "Point"
+      },
+      "id": "eec61b447e23e84247d783376409bc7b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 251000,
+        "comb_add": "640 N Wells St, 60654, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "JDL",
+        "status": "Stabilized",
+        "address": "640 N Wells St",
+        "project": "640 Wells",
+        "submarket": "River North",
+        "year": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6346,
+          41.8934
+        ],
+        "type": "Point"
+      },
+      "id": "f079aaa533ca8a992d01d7084a6bb263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 481000,
+        "comb_add": "345 E Ohio St, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Golub",
+        "status": "Stabilized",
+        "address": "345 E Ohio St",
+        "project": "Streeter",
+        "submarket": "Streeterville",
+        "year": 2006
+      },
+      "geometry": {
+        "coordinates": [
+          -87.619,
+          41.8923
+        ],
+        "type": "Point"
+      },
+      "id": "f097830dd0d8954512e0bab7503f7b88"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 149000,
+        "comb_add": "922 W Washington Blvd, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Atlantic / Focus",
+        "status": "Stabilized",
+        "address": "922 W Washington Blvd",
+        "project": "Circa 922",
+        "submarket": "Fulton Market",
+        "year": 2015
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6507,
+          41.8834
+        ],
+        "type": "Point"
+      },
+      "id": "f532910675388799afc56e2fc8aa435a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 395733,
+        "comb_add": "One S Halsted St, 60661, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Fifield",
+        "status": "Lease Up",
+        "address": "One S Halsted St",
+        "project": "One S Halsted",
+        "submarket": "Far West Loop",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6469,
+          41.8813
+        ],
+        "type": "Point"
+      },
+      "id": "f5e181ff67ca3cd1bc480f157100e1aa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 75000,
+        "comb_add": "171 N Aberdeen St, 60607, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "MCZ",
+        "status": "Lease Up",
+        "address": "171 N Aberdeen St",
+        "project": "Quarters",
+        "submarket": "Fulton Market",
+        "year": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6542,
+          41.8851
+        ],
+        "type": "Point"
+      },
+      "id": "fb05d9ca6b0535bc10ab68d3346c7092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 400000,
+        "comb_add": "800 W Fulton Market, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Thor",
+        "status": "Construction",
+        "address": "800 W Fulton Market",
+        "project": "Thor",
+        "submarket": "Fulton Market",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6481,
+          41.8871
+        ],
+        "type": "Point"
+      },
+      "id": "fc36bd5c1cc7b6c2e5f9d44255328ebf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 480000,
+        "comb_add": "355 E Ohio St, 60611, Chicago, Illinois",
+        "use": "Resi",
+        "ext_plan": "Existing",
+        "developer": "Golub",
+        "status": "Stabilized",
+        "address": "355 E Ohio St",
+        "project": "Atwater",
+        "submarket": "Streeterville",
+        "year": 2009
+      },
+      "geometry": {
+        "coordinates": [
+          -87.618,
+          41.8921
+        ],
+        "type": "Point"
+      },
+      "id": "ffbedf3736da41c705400098291d1008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gfa": 98000,
+        "comb_add": "328 N Carpenter St, 60607, Chicago, Illinois",
+        "use": "Office",
+        "ext_plan": "Existing",
+        "developer": "Murphy",
+        "status": "Construction",
+        "address": "328 N Carpenter St",
+        "project": "328 N Carpenter St",
+        "submarket": "Fulton Market",
+        "year": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          -87.6537,
+          41.8874
+        ],
+        "type": "Point"
+      },
+      "id": "ffda014c1e1ad85c1b67f433bd1cb006"
+    }
+  ],
+  "type": "FeatureCollection"
+}

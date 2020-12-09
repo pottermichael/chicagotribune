@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "chicagodowntowndevelopments",
+  "private_key_id": "private_key_id",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0mJSg99DX6Nbe\nhNe9hBNkaeBCMdH9RVVy6Ra+ex2PNO2M71Tf6DmtvELAf/b9jB4YvJJZLTa2nHc5\njd2pb7prW+S7Erv/iNgcXD1wE5OLU10san5IuGj/5aTWHul4JynrY/EAdENgYypp\nASjMo8zTMSWB2HYQxwLW0ZZhmV4GQqGBGJmA5ixJvMkl5Rht+shREkgYfPv6BJdM\nDqNWwkVsgfVWHvNrQCcq380NiRbDW895TgzJjzyD+BBjw128E56LPHvoEWyNK/0g\nJIrg3WvsY45OSUKoZehtGtM7fLqNNBYvfLB3eDSIykbuYIjY62eUbCyTkoLIbnYI\n6AFyL86xAgMBAAECggEACk4tpwzVJEjzX/HFLNmZULDQ/P4CTVlUQbEm3NpCKs6a\noqDyny9NgUo9peX3dmr1ObSjBkcz+NIvZH+hrz5CrUcqY3lzdGa+7ElgMSHQ2NG6\nPqNaDvTE+xtD33sWmAZmGDpVAZFg2eJ2xFSuWxUaxk9m5ESxog31LcR6eBnMGX/B\n1KQR7dDtNK/pU+/zmBzvfwWJVU7+aPD8ep7ShATJDzdJ+M2KcabonJVYQCIV1Gvn\nqXagPaLKVtpOxVCn5qKmOBfTc4EELRMwLhJiid4DF1Dwp+1DGMW9qasNyKwdX5lq\nJ+G2te812CInNvI0AxDEIRjyUkV9VsOdoakfl1u48QKBgQDZHA9EZ/qZa4ral+Kg\nS54iu59q7VNQxdO2+6IFerU1BNkFDiJo1qv1osOWwkN99tfj8L/SHbk7BqsQFLwV\n7fyt1PIMLJ9r4VUQKuo2A9DpSzMqLRK3DM0wplY1C3vqgZZchb/gZo639updGAyZ\nzgm4BUa391+JBln6OPFPHs/tmQKBgQDU8iBhIsmVvDeCgsOcBEZBRIi6TVDguNgm\nAomY9Xplgo42Lu55a2WcGP7ft/h4GDnqcnoFdvhsMveP/BoKBc67RG6Tt1/iX8v0\nn8JF7Fynxw8XHHpuyVFTNPscQ429HtCWB5i7NjUpCF5KHFPVfajWtPqb56GJu7eH\n0v4OI/uo2QKBgFnDWCyYMOwtooMuOOy9VuxVVlwHM2M554bIEvzg9vqsvm1wopll\n6ELuwJ8cQntaC3iamTRuRZ856pADgqAufUIBwPF3oZIg3+KHW75pZX6PMOBHMm2s\nRUnP++SCkwEqAtjOE77bqDY3SD6lKtCMd0g2Jj75b+5fSeRClsJ3otBBAoGBALT5\nJZ2H5Aw2TnLDURy54T880HqMlMy3KzN6epgdH60/fD7+ObvFEzDLaWiWQDtIU4g1\nTBBy4IOL+StMFJEqCFzMtrEhagLIaVx3nbKxQrlwChoZINAgldYCM9r8amws0RaA\nVEPeuOUrcH7JflH1HlWCr21qOLYGa96p6TH5ULpZAoGBAL8yDSNuR25Tk7WwOQIb\nnOB4x3LUGcOOkANuH3L6ser+CyhTA5x0GYC6934DYVFsGhmUDcEkt5UvynazjMlu\nfK0V1mWMEYaoEvRGzESNetq1ZRLqf7FotPxuDo2jaaawd3rG0NpH/odT86GOVZ7v\nUOEt0DNtg2J4g4PvOCTLf98Y\n-----END PRIVATE KEY-----\n",
+  "client_email": "potterdevelopments@chicagodowntowndevelopments.iam.gserviceaccount.com",
+  "client_id": "108149535540694948203",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/potterdevelopments%40chicagodowntowndevelopments.iam.gserviceaccount.com"
+}
