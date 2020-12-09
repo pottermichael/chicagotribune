@@ -1,5 +1,4 @@
 affine==2.3.0
-appnope @ file:///opt/concourse/worker/volumes/live/4f734db2-9ca8-4d8b-5b29-6ca15b4b4772/volume/appnope_1606859466979/work
 argon2-cffi @ file:///opt/concourse/worker/volumes/live/c4db8eed-7de0-4d68-400c-2ea7e21d3750/volume/argon2-cffi_1596828478065/work
 async-generator==1.10
 attrs @ file:///tmp/build/80754af9/attrs_1604765588209/work
