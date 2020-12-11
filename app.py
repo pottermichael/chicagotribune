@@ -1,23 +1,21 @@
 from flask import Flask, render_template, url_for, redirect
+import numpy as np
 import pandas as pd
 import requests
-
+import plotly
+import plotly.graph_objs as go
+import json
 
 app = Flask(__name__)
 
-"""
-scope = ['https://spreadsheets.google.com/feeds',
-        'https://www.googleapis.com/auth/drive']
-credentials = ServiceAccountCredentials.from_json_keyfile_name(
-    'chicagodowntowndevelopments-62ea5fbc2a1e.json', scope)
-gc = gspread.authorize(credentials)
-cbd = gc.open("ChicagoNewConstruction").sheet1
-data = cbd.get_all_values()
-headers = data.pop(0)
-#create dataframe and convert all available column to floats
-df = pd.DataFrame(data, dtype=float, columns=headers)
-df_mod=df.nsmallest(5,'gfa')
-"""
+"""Import Data and Filter"""
+
+cols = ['project','use','submarket','year','gfa','developer']
+df = pd.read_csv("data/chicago_cbd_supply_to_date.csv",usecols=cols)
+year = 2019
+df_filt = df[df['year']<=year]
+total_gfa = df_filt.gfa.sum()
+
 @app.route("/")
 def existing():
     return render_template("existing.html")
@@ -28,7 +26,7 @@ def retail():
 
 @app.route("/table", methods=("POST", "GET"))
 def html_table():
-    return render_template('table.html', tables=[df_mod.to_html(classes='data')], titles=df_mod.columns.values)
+    return render_template('table.html', tables=[df_filt.to_html(classes='data')], titles=df_filt.columns.values)
 
 @app.route("/radio", methods=("POST", "GET"))
 def html_radio():
@@ -38,6 +36,41 @@ def html_radio():
 @app.route("/tour")
 def tour():
     return render_template("tour.html")
+
+"""
+
+PLOTLY GRAPH & CHART INFORMATION
+
+"""
+
+def create_plot():
+    N = 40
+    x = np.linspace(0, 1, N)
+    y = np.random.randn(N)
+    df = pd.DataFrame({'x': x, 'y': y}) # creating a sample dataframe
+
+    dta = [
+        go.Bar(
+            x=df['x'], # assign x as the dataframe column 'x'
+            y=df['y']
+        )
+    ]
+
+    graphJSON = json.dumps(dta, cls=plotly.utils.PlotlyJSONEncoder)
+
+    return graphJSON
+
+
+@app.route("/plots")
+def plots():
+    bar = create_plot()
+    return render_template("plots.html",plot=bar)
+
+"""
+
+RUN
+
+"""
 
 if __name__ == '__main__':
   app.run(debug=True,host='0.0.0.0')

@@ -305,7 +305,7 @@ var config = {
     {
       id: 'infill',
       title: 'Completed Projects - Tribune is the Only Infill Site',
-      description: 'Of the three new blank slate sites, Tribune is the only property immediately contiguous to downtown, central to existing development patterns, and which offers an ability to utilize existing mass transit infrastructure. Evidencing demand around the location, within a 20-minute walk from Phase 1 at Grand Avenue, 25,000 luxury residential units (73% of all CBD inventory) and 15 million square feet of Class +A office (90% of all CBD inventory) have been delivered during the past 20 years.',
+      description: 'Of the three new blank slate sites, Tribune is the only property immediately contiguous to downtown, central to existing development patterns, and which offers an ability to utilize existing mass transit infrastructure. Evidencing demand around the location, within a 20-minute walk from Phase 1 at Grand Avenue, 16,000 luxury residential units (44% of all CBD deliveries) and 15.5 million square feet of Class +A office (74% of all CBD deliveries) have been delivered during the past 10 years.',
       location: {
         center: { lon: -87.65837, lat: 41.89165 },
         zoom: 12.97,
@@ -346,7 +346,7 @@ var config = {
     {
       id: 'fulton',
       image: 'https://dk7h73956znl6.cloudfront.net/fultonmarketdistrict.jpg',
-      title: 'Planned Projects - Tribune is More Central than Fulton Market',
+      title: 'Planned Projects - Tribune is Centrally Located',
       description: 'For all of its success, Fulton Market’s growth depends on a continual push west, whereas the Tribune site is infill to downtown’s highest performing submarkets. Future office product in the CBD is concentrated in Fulton Market (+6 million square feet planned) where investors have purchased nearly all industrial sites of significance in the past 5 years. Major residential projects are being zoned at Greyhound and Moody Bible, just north and east of Tribune, which together total +6,000 new units, and will effectively close out River North’s post-recession development frenzy marching up to and then past Chicago Avenue.',
       location: {
         center: { lon: -87.64699, lat: 41.88622 },
@@ -390,7 +390,7 @@ var config = {
     {
       id: 'commuter_walksheds',
       title: 'Ogilvie and Union Station – 10 Minute Walksheds',
-      description: 'Access to commuter rail stations remains essential for office development sites to appeal to the broadest number of end users and employees. System wide, three lines terminate at Ogilvie Station and comprise 30% of all suburban ridership while eight lines terminate at Union Station representing 55% of all suburban ridership. Nearly all planned development in Fulton Market is bound by Halsted, Lake, Kinzie and Ogden. This submarket begins at Halsted Street .5 miles west of Ogilvie, whereas the Tribune property begins .6 miles north at Grand Avenue. Such walking distances are roughly equivalent to 300 N LaSalle in River North or east to Dearborn/State Streets in the Loop. Relative to Union Station, both submarkets are at similar disadvantages compared to the Loop/West Loop, but on par with the majority of office stock in River North.',
+      description: 'Access to commuter rail stations remains essential for office development sites to appeal to the broadest number of end users and employees. System wide, three lines terminate at Ogilvie Station and comprise 30% of all suburban ridership while eight lines terminate at Union Station representing 55% of all suburban ridership. Nearly all planned development in Fulton Market is bound by Halsted, Lake, Kinzie and Ogden. This submarket begins at Halsted Street .4 miles west of Ogilvie, whereas the Tribune property begins .6 miles north at Grand Avenue. Such walking distances are roughly equivalent to 300 N LaSalle in River North or east to Dearborn/State Streets in the Loop. Relative to Union Station, both submarkets are at similar disadvantages compared to the Loop/West Loop, but on par with the majority of office stock in River North.',
       location: {
         center: { lon: -87.64699, lat: 41.88622 },
         zoom: 14.29,
@@ -467,7 +467,7 @@ var config = {
       id: 'tribune_grandavebridge',
       title: 'Tribune Site – Connecting River North, River West & the West Loop',
       image: 'https://dk7h73956znl6.cloudfront.net/kinzie-park.jpg',
-      description: 'Phase 1 of the Tribune master plan will commence at Grand Avenue, transforming a currently barren riverfront parking lot from pedestrian barrier to pedestrian magnet. Delivering over 2 million square feet of office and residential development, 500’ of new Riverwalk and 4-acres of open space, Phase 1 will not only be a destination unto itself, but also serve to stitch together the River North and River West neighborhoods and become a new gateway between the West Loop and future development north within the Tribune master plan.',
+      description: 'Phase 1 of the Tribune master plan will commence at Grand Avenue, transforming a currently barren riverfront parking lot from pedestrian barrier to pedestrian magnet. Delivering over 2 million square feet of office and residential development, 850’ of new Riverwalk and 4-acres of open space, Phase 1 will not only be a destination unto itself, but also serve to stitch together the River North and River West neighborhoods and become a new gateway between the West Loop and future development north within the Tribune master plan.',
       location: {
         center: [-87.64116, 41.89144],
         zoom: 16.58,
