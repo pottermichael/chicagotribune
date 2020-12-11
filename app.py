@@ -16,6 +16,10 @@ year = 2019
 df_filt = df[df['year']<=year]
 total_gfa = df_filt.gfa.sum()
 
+@app.route("/table", methods=("POST", "GET"))
+def html_table():
+    return render_template('table.html', tables=[df_filt.to_html(classes='data')], titles=df_filt.columns.values)
+
 @app.route("/")
 def existing():
     return render_template("existing.html")
@@ -23,10 +27,6 @@ def existing():
 @app.route("/retail")
 def retail():
     return render_template("retail.html")
-
-@app.route("/table", methods=("POST", "GET"))
-def html_table():
-    return render_template('table.html', tables=[df_filt.to_html(classes='data')], titles=df_filt.columns.values)
 
 @app.route("/radio", methods=("POST", "GET"))
 def html_radio():
