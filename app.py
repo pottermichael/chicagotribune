@@ -2,8 +2,6 @@ from flask import Flask, render_template, url_for, redirect
 import numpy as np
 import pandas as pd
 import requests
-import plotly
-import plotly.graph_objs as go
 import json
 
 app = Flask(__name__)
