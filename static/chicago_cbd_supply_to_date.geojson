@@ -769,7 +769,7 @@
         "developer": "Hines",
         "status": "Stabilized",
         "address": "444 N Lake St",
-        "project": "River Point",
+        "project": "DLA",
         "submarket": "West Loop",
         "year": 2016
       },
@@ -815,7 +815,7 @@
         "developer": "Hines",
         "status": "Stabilized",
         "address": "300 N LaSalle Dr",
-        "project": "300 LaSalle",
+        "project": "Kirkland Ellis",
         "submarket": "River North",
         "year": 2009
       },
@@ -2517,7 +2517,7 @@
         "developer": "RIDC",
         "status": "Construction",
         "address": "225 S Canal St",
-        "project": "Union Station",
+        "project": "Union Station - BMO",
         "submarket": "West Loop",
         "year": 2022
       },
@@ -2885,7 +2885,7 @@
         "developer": "RIDC",
         "status": "Stabilized",
         "address": "150 N Riverside Plaza",
-        "project": "150 Riverside",
+        "project": "William Blair",
         "submarket": "West Loop",
         "year": 2016
       },
@@ -3092,7 +3092,7 @@
         "developer": "TJBC",
         "status": "Stabilized",
         "address": "155 N Wacker Dr",
-        "project": "155 Wacker",
+        "project": "EY",
         "submarket": "West Loop",
         "year": 2009
       },
@@ -3713,7 +3713,7 @@
         "developer": "Mesirow",
         "status": "Stabilized",
         "address": "353 N Clark St",
-        "project": "353 Clark",
+        "project": "Mesirow",
         "submarket": "River North",
         "year": 2009
       },
