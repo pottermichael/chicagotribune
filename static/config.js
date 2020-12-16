@@ -287,7 +287,7 @@ var config = {
     },
     {
       id: 'confluence',
-      title: 'Chicago River Confluence - Phase 1 Tower North',
+      title: 'View North from Confluence - Tower 1 Rendering',
       image: 'https://dk7h73956znl6.cloudfront.net/confluence_north.png',
       description: 'Since 2016 over 3.5 million square feet of Class +A office has been delivered or is leased in new construction around the Confluence. Now home to an array of businesses within diverse industries including William Blair, Salesforce, Hyatt Corporation, Bank of America, McDermott Will & Emery, DLA Piper and Mead Johnson, these tenants reflect an appreciation for the river with its unparalleled light, air, and views, and have solidified the river as the location of choice for Chicago’s leading corporations.',
       location: {
