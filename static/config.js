@@ -10,9 +10,9 @@ var config = {
   chapters: [
     {
       id: 'fultonriver_2',
-      title: 'Transformational Downtown Development',
+      title: 'Transformational Development Opportunity',
       image: 'https://dk7h73956znl6.cloudfront.net/fultonriverdistrict.png',
-      description: 'At 37-acres, the Tribune property is a unique blank slate development site central to the City’s most desirable 24/7 submarkets: West Loop, River North and Fulton Market. Artificially restricted from development for over 30 years by zoning, as of 4Q 2018 the property now allows for up to 11 million square feet of mixed-use development. A natural extension of the river’s Confluence District - downtown Chicago’s original and recently re-established commercial epicenter - this significant site presents a rare opportunity to create a state of the art “city in the park” bringing over 2/3rd miles of new riverwalk and 15 acres of public open space downtown.',
+      description: 'At 37-acres, the Tribune property is a unique blank slate development site central to the City’s most desirable 24/7 submarkets: West Loop, River North and Fulton Market. Artificially restricted from development for over 30 years, the property completed a rezoning in 2018 that allows for a multi-phase, mixed-use development of up to 11 million square feet. A natural extension of the river’s Confluence District - downtown Chicago’s original and recently re-established commercial epicenter - this site presents a rare opportunity to create a state of the art “city in the park” bringing over 2/3rd miles of new riverwalk and 15 acres of public open space downtown.',
       location: {
         center: { lon: -87.65125, lat: 41.88814 },
         zoom: 14.16,
@@ -43,7 +43,7 @@ var config = {
       id: 'past_growth',
       title: 'Two Decades of Urbanization',
       image: 'https://dk7h73956znl6.cloudfront.net/chicago_cbd_table.png',
-      description: 'Over the past two decades, the CBD core has experienced a dramatic urban renaissance along with population growth unlike any other major U.S. city according to the Brookings Institute. During this time the conventional Loop/West Loop and River North submarkets have become completely built out and today no high-quality development sites remain. In 2014 a new submarket catalyzed by Google in Fulton Market emerged, creating Chicago’s first “neighborhood” office submarket largely defined by a high concentration of world-class restaurants and amenities. Meanwhile highly successful civic, office (green) and residential (orange) projects along the river’s edge have solidified Chicago’s “second great waterfront” as the city’s most desirable aesthetic.',
+      description: 'Over the past two decades, the CBD core has experienced a dramatic urban renaissance along with population growth unlike any other major U.S. city according to the Brookings Institute. During this time the conventional Loop/West Loop and River North submarkets have become built out and today few viable development sites remain. In 2014 a new submarket catalyzed by Google in Fulton Market emerged, creating Chicago’s first “neighborhood” office submarket largely defined by a high concentration of world-class restaurants and amenities. Meanwhile highly successful civic projects (such as the riverwalk), office (green) and residential (orange) projects along the river’s edge have solidified Chicago’s “second great waterfront” as the city’s most desirable aesthetic.',
       location: {
         center: [-87.65041, 41.88537],
         zoom: 14.06,
@@ -78,7 +78,7 @@ var config = {
     {
       id: 'dxzoning',
       title: '2016: Expanded "DX" Zoning',
-      description: 'In 2016 City Council approved updates to the zoning code governing the downtown "DX" floor area bonus system and an expansion of the downtown zoning district boundaries. Under the moniker "Neighborhood Opportunity Bonus", the changes were introduced to accommodate rapid growth in demand by increasing allowable density in high-demand areas served by transit, principally to the north and west of the conventional downtown core.',
+      description: 'In 2016 City Council approved updates to the zoning code governing the downtown "DX" floor area bonus system and an expansion of the downtown zoning district boundaries. Under the moniker "Neighborhood Opportunity Bonus", the changes were introduced to accommodate rapid growth in demand by increasing allowable density in high-demand areas served by transit to the north and west of the conventional downtown core.',
       location: {
         center: { lon: -87.65518, lat: 41.88858 },
         zoom: 13.72,
@@ -160,7 +160,7 @@ var config = {
       id: 'transitwayline',
       title: '3-Mile "North Branch Transitway"',
       image: 'https://dk7h73956znl6.cloudfront.net/transitway.jpeg',
-      description: 'Within the modernization framework the City identified a number of transportation projects throughout the corridor to improve public transportation. Most significant is the “North Branch Transitway”, which calls for a repurposing of an unused 3-mile freight rail spur into a dedicated pedestrian and Bus Rapid Transit (BRT) corridor anchored by Union Station and Ogilvie Station at the south and the Metra Clybourn and 606 Trail to the north. Legal procedures to commence this project are underway at the north leg of the Transitway and development of the Tribune site will enable the southern end of the corridor.',
+      description: 'Within the modernization framework the City identified a number of transportation projects throughout the corridor to improve public transportation. Most significant is the “North Branch Transitway” (green line), which calls for a repurposing of an unused 3-mile freight rail spur into a dedicated pedestrian and Bus Rapid Transit (BRT) corridor anchored by Union Station and Ogilvie Station at the south and the Metra Clybourn and 606 Trail to the north. Legal procedures to commence this project are underway at the north leg of the Transitway and development of the Tribune site will enable the southern end of the corridor.',
       location: {
         center: { lon: -87.66897, lat: 41.89806 },
         zoom: 13.49,
@@ -205,7 +205,7 @@ var config = {
     {
       id: 'confluence',
       title: 'Chicago River Confluence',
-      image: 'https://dk7h73956znl6.cloudfront.net/confluence.jpg',
+      image: 'https://dk7h73956znl6.cloudfront.net/confluence_north.png',
       description: 'Since 2016 over 3.5 million square feet of Class +A office has been delivered or is leased in new construction around the Confluence. Now home to an array of businesses within diverse industries including William Blair, Salesforce, Hyatt Corporation, Bank of America, McDermott Will & Emery, DLA Piper and Mead Johnson, these tenants reflect an appreciation for the river with its unparalleled light, air, and views, and have solidified the river as the location of choice for Chicago’s leading corporations.',
       location: {
         center: [-87.63837, 41.88675],
@@ -222,7 +222,7 @@ var config = {
     {
       id: 'commuter_lines',
       title: 'Access to a Commuter Population of 5.5 Million',
-      description: 'Chicagos downtown core is accessible via mass transit to the top recruitment populations for suburban employees in all directions. As the largest metro transit system in the U.S. outside of the east coast corridor, Amtrak and Metra trains provide efficient connections to Ogilvie Station and Union Station, that later of which is the #4 busiest rail station in the U.S. by ridership.',
+      description: 'Chicagos downtown core is accessible via mass transit to the top recruitment populations for suburban employees in all directions. As the largest metro transit system in the U.S. outside of the east coast corridor, Amtrak and Metra trains provide efficient connections to Ogilvie Station and Union Station, that latter of which is the #4 busiest rail station in the U.S. by ridership.',
       location: {
         center: [-87.74011, 42.02653],
         zoom: 8.25,

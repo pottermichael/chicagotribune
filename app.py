@@ -2,6 +2,8 @@ from flask import Flask, render_template, url_for, redirect
 import numpy as np
 import pandas as pd
 import requests
+import plotly
+import plotly.graph_objs as go
 import json
 
 app = Flask(__name__)
@@ -10,13 +12,19 @@ app = Flask(__name__)
 
 cols = ['project','use','submarket','year','gfa','developer']
 df = pd.read_csv("data/chicago_cbd_supply_to_date.csv",usecols=cols)
-year = 2019
-df_filt = df[df['year']<=year]
+year = 2020
+df_filt = df[
+    (df['use']=='Resi')
+    &(df['year']>=year)
+    ]
 total_gfa = df_filt.gfa.sum()
+subs = df_filt.groupby('submarket').agg({'gfa':'sum'}).sort_values('gfa',ascending=False)[0:10]
 
 @app.route("/table", methods=("POST", "GET"))
 def html_table():
-    return render_template('table.html', tables=[df_filt.to_html(classes='data')], titles=df_filt.columns.values)
+    return render_template('table.html', tables=[subs.to_html(classes='data')], titles=subs.columns.values)
+
+"""Other Routes"""
 
 @app.route("/")
 def existing():
