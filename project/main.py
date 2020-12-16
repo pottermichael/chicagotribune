@@ -1,4 +1,6 @@
-from flask import Flask, render_template, url_for, redirect
+from flask import Blueprint, jsonify, render_template, url_for, request
+from flask_login import login_required, current_user
+from . import db
 import numpy as np
 import pandas as pd
 import requests
@@ -6,40 +8,57 @@ import plotly
 import plotly.graph_objs as go
 import json
 
-app = Flask(__name__)
+main = Blueprint('main', __name__)
+
+"""
+
+From Auth File
+
+
+"""
+
+@main.route('/')
+def index():
+    return render_template("index.html")
+
+@main.route('/profile')
+@login_required
+def profile():
+    return render_template("profile.html", name=current_user.name)
 
 """Import Data and Filter"""
 
-cols = ['project','use','submarket','year','gfa','developer']
-df = pd.read_csv("data/chicago_cbd_supply_to_date.csv",usecols=cols)
-year = 2020
-df_filt = df[
-    (df['use']=='Resi')
-    &(df['year']>=year)
-    ]
-total_gfa = df_filt.gfa.sum()
-subs = df_filt.groupby('submarket').agg({'gfa':'sum'}).sort_values('gfa',ascending=False)[0:10]
+#cols = ['project','use','submarket','year','gfa','developer']
+#df = pd.read_csv("chicago_cbd_supply_to_date.csv",usecols=cols)
+#year = 2020
+#df_filt = df[
+#    (df['use']=='Resi')
+#    &(df['year']>=year)
+#    ]
+#total_gfa = df_filt.gfa.sum()
+#subs = df_filt.groupby('submarket').agg({'gfa':'sum'}).sort_values('gfa',ascending=False)[0:10]
 
-@app.route("/table", methods=("POST", "GET"))
+@main.route("/table", methods=("POST", "GET"))
 def html_table():
     return render_template('table.html', tables=[subs.to_html(classes='data')], titles=subs.columns.values)
 
 """Other Routes"""
 
-@app.route("/")
+@main.route("/existing")
 def existing():
     return render_template("existing.html")
 
-@app.route("/retail")
+@main.route("/retail")
 def retail():
     return render_template("retail.html")
 
-@app.route("/radio", methods=("POST", "GET"))
+@main.route("/radio", methods=("POST", "GET"))
 def html_radio():
     option = requests.form['options']
     return render_template('radio.html')
 
-@app.route("/tour")
+@main.route("/tour")
+@login_required
 def tour():
     return render_template("tour.html")
 
@@ -67,7 +86,7 @@ def create_plot():
     return graphJSON
 
 
-@app.route("/plots")
+@main.route("/plots")
 def plots():
     bar = create_plot()
     return render_template("plots.html",plot=bar)
