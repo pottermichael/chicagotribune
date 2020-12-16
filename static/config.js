@@ -76,6 +76,89 @@ var config = {
       ]
     },
     {
+      id: 'commuter_lines',
+      title: 'Access to a Commuter Population of 5.5 Million',
+      description: 'Chicagos downtown core is accessible via mass transit to the top recruitment populations for suburban employees in all directions. As the largest metro transit system in the U.S. outside of the east coast corridor, Amtrak and Metra trains provide efficient connections to Ogilvie Station and Union Station, that latter of which is the #4 busiest rail station in the U.S. by ridership.',
+      location: {
+        center: [-87.74011, 42.02653],
+        zoom: 8.25,
+        pitch: 0.00,
+        bearing: 0.00
+      },
+      onChapterEnter: [{
+          layer: 'cta-l-lines',
+          opacity: 0
+        },
+        {
+          layer: 'metra-lines',
+          opacity: 1
+        },
+        {
+          layer: 'metra-stations-updated',
+          opacity: 1
+        },
+      ],
+      onChapterExit: [{
+          layer: 'metra-lines',
+          opacity: .5
+        },
+        {
+          layer: 'metra-stations-updated',
+          opacity: .5
+        },
+      ]
+    },
+    {
+      id: 'suburban',
+      image: 'https://dk7h73956znl6.cloudfront.net/income_scale.png',
+      title: 'Access to Suburban Talent',
+      description: 'Along these commuter rail lines an analysis of 2017 IRS income data indicates the highest suburban concentrations of +$100,000 earners reside in communities north and west of downtown. These suburbs are serviced primarily by the Union Pacific North and Union Pacific Northwest (to Ogilvie Station) and the Burlington North Santa Fe (to Union Station).',
+      location: {
+        center: [-87.74011, 42.02653],
+        zoom: 8.25,
+        pitch: 0.00,
+        bearing: 0.00
+      },
+      onChapterEnter: [{
+          layer: 'chicago-irs',
+          opacity: .60
+        },
+      ],
+      onChapterExit: [{
+          layer: 'metra-lines',
+          opacity: 0
+        },
+        {
+          layer: 'metra-stations-updated',
+          opacity: 0
+        }
+      ]
+    },
+    {
+      id: 'city',
+      image: 'https://dk7h73956znl6.cloudfront.net/income_scale.png',
+      title: 'Access to City Talent',
+      description: 'In the city the highest concentrations of six-figure earners can be found in neighborhoods north and northwest and increasingly within the CBD core itself. These leading city zip codes contain over 75,000 filers with earnings over $100,000/year across established neighborhoods including Lincoln Park, Bucktown and Wicker Park that are serviced by CTA Blue and Brown lines. Also included are downtown neighborhoods exhibiting some of the best density and demographics in the U.S. where the top CBD income concentrations can be found in River North (48%), Streeterville (46%) and Fulton Market (42%).',
+      location: {
+        center: { lon: -87.65577, lat: 41.90434 },
+        zoom: 13.05,
+        pitch: 0.00,
+        bearing: 0.00
+      },
+      onChapterEnter: [
+      ],
+      onChapterExit: [
+        {
+          layer: 'cta-l-lines',
+          opacity: .55
+        },
+        {
+          layer: 'chicago-irs',
+          opacity: 0
+        },
+      ]
+    },
+    {
       id: 'dxzoning',
       title: '2016: Expanded "DX" Zoning',
       description: 'In 2016 City Council approved updates to the zoning code governing the downtown "DX" floor area bonus system and an expansion of the downtown zoning district boundaries. Under the moniker "Neighborhood Opportunity Bonus", the changes were introduced to accommodate rapid growth in demand by increasing allowable density in high-demand areas served by transit to the north and west of the conventional downtown core.',
@@ -204,7 +287,7 @@ var config = {
     },
     {
       id: 'confluence',
-      title: 'Chicago River Confluence',
+      title: 'Chicago River Confluence - Phase 1 Tower North',
       image: 'https://dk7h73956znl6.cloudfront.net/confluence_north.png',
       description: 'Since 2016 over 3.5 million square feet of Class +A office has been delivered or is leased in new construction around the Confluence. Now home to an array of businesses within diverse industries including William Blair, Salesforce, Hyatt Corporation, Bank of America, McDermott Will & Emery, DLA Piper and Mead Johnson, these tenants reflect an appreciation for the river with its unparalleled light, air, and views, and have solidified the river as the location of choice for Chicago’s leading corporations.',
       location: {
@@ -218,89 +301,6 @@ var config = {
         layer: '3d-buildings',
         opacity: 0
       }, ]
-    },
-    {
-      id: 'commuter_lines',
-      title: 'Access to a Commuter Population of 5.5 Million',
-      description: 'Chicagos downtown core is accessible via mass transit to the top recruitment populations for suburban employees in all directions. As the largest metro transit system in the U.S. outside of the east coast corridor, Amtrak and Metra trains provide efficient connections to Ogilvie Station and Union Station, that latter of which is the #4 busiest rail station in the U.S. by ridership.',
-      location: {
-        center: [-87.74011, 42.02653],
-        zoom: 8.25,
-        pitch: 0.00,
-        bearing: 0.00
-      },
-      onChapterEnter: [{
-          layer: 'cta-l-lines',
-          opacity: 0
-        },
-        {
-          layer: 'metra-lines',
-          opacity: 1
-        },
-        {
-          layer: 'metra-stations-updated',
-          opacity: 1
-        },
-      ],
-      onChapterExit: [{
-          layer: 'metra-lines',
-          opacity: .5
-        },
-        {
-          layer: 'metra-stations-updated',
-          opacity: .5
-        },
-      ]
-    },
-    {
-      id: 'suburban',
-      image: 'https://dk7h73956znl6.cloudfront.net/income_scale.png',
-      title: 'Access to Suburban Talent',
-      description: 'Along these commuter rail lines an analysis of 2017 IRS income data indicates the highest suburban concentrations of +$100,000 earners reside in communities north and west of downtown. These suburbs are serviced primarily by the Union Pacific North and Union Pacific Northwest (to Ogilvie Station) and the Burlington North Santa Fe (to Union Station).',
-      location: {
-        center: [-87.74011, 42.02653],
-        zoom: 8.25,
-        pitch: 0.00,
-        bearing: 0.00
-      },
-      onChapterEnter: [{
-          layer: 'chicago-irs',
-          opacity: .60
-        },
-      ],
-      onChapterExit: [{
-          layer: 'metra-lines',
-          opacity: 0
-        },
-        {
-          layer: 'metra-stations-updated',
-          opacity: 0
-        }
-      ]
-    },
-    {
-      id: 'city',
-      image: 'https://dk7h73956znl6.cloudfront.net/income_scale.png',
-      title: 'Access to City Talent',
-      description: 'In the city the highest concentrations of six-figure earners can be found in neighborhoods north and northwest and increasingly within the CBD core itself. These leading city zip codes contain over 75,000 filers with earnings over $100,000/year across established neighborhoods including Lincoln Park, Bucktown and Wicker Park that are serviced by CTA Blue and Brown lines. Also included are downtown neighborhoods exhibiting some of the best density and demographics in the U.S. where the top CBD income concentrations can be found in River North (48%), Streeterville (46%) and Fulton Market (42%).',
-      location: {
-        center: { lon: -87.65577, lat: 41.90434 },
-        zoom: 13.05,
-        pitch: 0.00,
-        bearing: 0.00
-      },
-      onChapterEnter: [
-      ],
-      onChapterExit: [
-        {
-          layer: 'cta-l-lines',
-          opacity: .55
-        },
-        {
-          layer: 'chicago-irs',
-          opacity: 0
-        },
-      ]
     },
     {
       id: 'infill',
@@ -485,7 +485,7 @@ var config = {
       id: 'sites_planned_all',
       image: 'https://dk7h73956znl6.cloudfront.net/grand_two_towers.png',
       title: 'Tribune Site - Phase 1 Office Towers',
-      description: 'Conceptual rendering of Phase 1 office towers totaling 1 million square feet between Grand Avenue and Ohio Street feeder.',
+      description: 'Conceptual rendering of Phase 1 office towers totaling 1 million square feet, prominently situated along the river between Grand Avenue and Ohio Street feeder.',
       location: {
         center: [-87.64451, 41.88737],
         zoom: 13.64,
