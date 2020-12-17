@@ -26,6 +26,10 @@ def index():
 def profile():
     return render_template("profile.html", name=current_user.name)
 
+@main.route('/drone')
+def drone():
+    return render_template("drone.html")
+
 """Import Data and Filter"""
 
 #cols = ['project','use','submarket','year','gfa','developer']
