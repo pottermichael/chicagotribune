@@ -97,5 +97,22 @@ RUN
 
 """
 
+""" NOT PART OF AUTH APP """
+
+numb = [1,4,5,6,50]
+
+@main.route('/calc')
+def calc():
+    return render_template("calc.html")
+
+@main.route("/cagr")
+def cagr():
+    a = request.args.get('a', 0, type=int)
+    b = request.args.get('b', 0, type=int)
+    c = request.args.get('c', 0, type=int)
+    total = round((b / a) ** (1 / c ) - 1,4)
+    return jsonify(result=total)
+
+
 if __name__ == '__main__':
   app.run(debug=True,host='0.0.0.0')
