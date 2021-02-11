@@ -1,10 +1,54 @@
-body {
-  margin: 0;
-  padding: 0;
+
+.header {
+    text-align: center;
+    background-color: rgb(136, 185, 229);
+    height: 70px;
+    line-height: 70px;
 }
+
+.chart{
+    margin-top: 130px;
+    text-align: center;
+}
+
 #map {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+.coordinates {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 18px;
+  border-radius: 3px;
+  display: none;
+}
+
+#controls { margin-bottom: 200px; }
+
+#play-button {
+  background: #F14E58;
+  padding-right: 26px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  margin: 0;
+  padding: 0 12px;
+  width: 120px;
+  cursor: pointer;
+  height: 60px;
+  text-align: center;
+}
+
+#play-button:hover {
+  background-color: #848480;
+  text-align: center;
 }

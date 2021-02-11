@@ -47,6 +47,9 @@ def login_post():
     if not user or not check_password_hash(user.password, password):
         flash('Please check login details and try again')
         return redirect(url_for('auth.login'))
+    #debug
+    print('checking')
+    print(user)
     login_user(user, remember=remember)
     return redirect(url_for('main.profile'))
 

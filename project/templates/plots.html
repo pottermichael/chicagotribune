@@ -1,9 +1,20 @@
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+{% extends "boot.html"%}
 
-<div class="chart" id="bargraph">
-    <script>
-        var graphs = {{plot | safe}};
-        Plotly.plot('bargraph',graphs,{});
-    </script>
-</div>
+{% block content %}
+
+<body>
+  <div class="header">
+      <h2>
+          Plotly Chart Original
+      </h2>
+  </div>
+
+  <div class="chart" id="bargraph"></div>
+      <script>
+          var graphs = {{plot | safe}};
+          Plotly.plot('bargraph',graphs,{});
+      </script>
+</body>
+
+
+{% endblock %}

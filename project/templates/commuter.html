@@ -1,0 +1,236 @@
+{% extends 'boot.html' %}
+{% block content %}
+<style>
+  .coordinates {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 11px;
+    line-height: 18px;
+    border-radius: 3px;
+    display: none;
+  }
+</style>
+
+<! -- create container -- >
+<div class="row">
+  <div class="col-4">
+    <!-- Panel Header-->
+    <h5>Compare Locations for Employee Profile</h5><br>
+      <!-- Forms for Gathering Employee Transit Mode Information-->
+      <form>
+        <h5>Commuter Rails</h5>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Union</label>
+          <div class="col-sm-2">
+            <input type="text" name = union class="form-control form-control-sm" id="colFormLabelSm" placeholder=.25 value=.25>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Ogilvie</label>
+          <div class="col-sm-2">
+            <input type="text" name = ogilvie class="form-control form-control-sm" id="colFormLabelSm" placeholder=.2 value=.2>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">LaSalle</label>
+          <div class="col-sm-2">
+            <input type="text" name = lasalle class="form-control form-control-sm" id="colFormLabelSm" placeholder=.04 value=.04>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Millennium</label>
+          <div class="col-sm-2">
+            <input type="text" name = mill class="form-control form-control-sm" id="colFormLabelSm" placeholder=.03 value=.03>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Van Buren</label>
+          <div class="col-sm-2">
+            <input type="text" name = van class="form-control form-control-sm" id="colFormLabelSm" placeholder=.01 value=.01>
+          </div>
+        </div><br>
+        <h5>CTA "L" Rails</h5>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Red</label>
+          <div class="col-sm-2">
+            <input type="text" name = red class="form-control form-control-sm" id="colFormLabelSm" placeholder=.10 value=.1>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Blue</label>
+          <div class="col-sm-2">
+            <input type="text" name = blue class="form-control form-control-sm" id="colFormLabelSm" placeholder=.15 value=.15>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Brown</label>
+          <div class="col-sm-2">
+            <input type="text" name = brown class="form-control form-control-sm" id="colFormLabelSm" placeholder=.10 value=.10>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Purple</label>
+          <div class="col-sm-2">
+            <input type="text" name = purple class="form-control form-control-sm" id="colFormLabelSm" placeholder=.05 value=.05>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Green</label>
+          <div class="col-sm-2">
+            <input type="text" name = green class="form-control form-control-sm" id="colFormLabelSm" placeholder=.01 value=.01>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Orange</label>
+          <div class="col-sm-2">
+            <input type="text" name = orange class="form-control form-control-sm" id="colFormLabelSm" placeholder=.04 value=.04>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Pink</label>
+          <div class="col-sm-2">
+            <input type="text" name = pink class="form-control form-control-sm" id="colFormLabelSm" placeholder=.02 value=.02>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id=compute>Calculate</button>
+        Wtd Average Commute:
+        <span id=nothing>{{ "{:,.2f} miles".format(computer.wtd_dist.sum()) }}</span><br>
+        Sum Reconciliation:
+        <span id=result></span><br>
+      </form><br>
+
+   <!-- Table for Transit Distances -->
+   <table class="table table-striped table-sm" id="tableu">
+       <thead>
+           <tr>
+               <th>Type</th>
+                <!-- Add Input -->
+               <th>Line</th>
+               <th>Station</th>
+               <th>Distance</th>
+           <tr>
+       </thead>
+       <tbody>
+           {% for index, row in computer.iterrows() %}
+           <tr>
+               <td>
+                 <div class="form-group row">
+                   <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">{{ row['station'] }}</label>
+                   <div class="col-sm-6">
+                     <input type="text" name = union class="form-control form-control-sm" id="colFormLabelSm" placeholder=.25 value=.25>
+                   </div>
+                 </div>
+               </td>
+
+               <td>{{ row['line'] }}</td>
+               <td>{{ row['station'] }}</td>
+               <td>{{ row['dist'] }}</td>
+           </tr>
+           {% endfor %}
+       </tbody>
+   </table>
+
+  </div>
+   <!-- Map Column -->
+  <div class="col-8">
+    <div id='map'></div>
+    <pre id="coordinates" class="coordinates"></pre>
+  </div>
+</div>
+
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibXBvdHRlciIsImEiOiJjajAxZGltM3UwNjF2MzJsczVnN3R2eTNnIn0._Sj0HRLt8VTQGTojMWYFfQ';
+  var coordinates = document.getElementById('coordinates');
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mpotter/ck88x20f70km41inu4i8rvw6f',
+    center: [-87.632574, 41.886570],
+    zoom: 13
+  });
+
+  map.on('load', function() {
+      //add layers for blip
+      map.addSource('point', {
+        "type": "geojson",
+        "data": {
+          "type": "Point",
+          "coordinates": [-87.639785, 41.877618],
+        }
+      });
+      map.addLayer({
+        "id": "point",
+        "source": "point",
+        "type": "circle",
+        "paint": {
+          "circle-radius": initialRadius,
+          "circle-radius-transition": {
+            duration: 0
+          },
+          "circle-opacity-transition": {
+            duration: 0
+          },
+          "circle-color": "#FFC20B"
+        }
+      });
+      map.addLayer({
+        "id": "point1",
+        "source": "point",
+        "type": "circle",
+        "paint": {
+          "circle-radius": initialRadius,
+          "circle-color": "#152254"
+        }
+      });
+      animateMarker(0);
+  });
+
+
+  var marker = new mapboxgl.Marker({
+      draggable: true
+    })
+    .setLngLat([-87.65437499487255, 41.887272876403955])
+    .addTo(map);
+
+  function onDragEnd() {
+    var lngLat = marker.getLngLat();
+    coordinates.style.display = 'block';
+    coordinates.innerHTML =
+      'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
+  }
+  console.log(coordinates)
+  marker.on('dragend', onDragEnd);
+</script>
+
+<script type=text/javascript>
+  $(function() {
+    $('#compute').bind('click', function() {
+      $.getJSON('/mode', {
+        union: $('input[name="union"]').val(),
+        ogilvie: $('input[name="ogilvie"]').val(),
+        lasalle: $('input[name="lasalle"]').val(),
+        mill: $('input[name="mill"]').val(),
+        van: $('input[name="van"]').val(),
+        red: $('input[name="red"]').val(),
+        blue: $('input[name="blue"]').val(),
+        brown: $('input[name="brown"]').val(),
+        purple: $('input[name="purple"]').val(),
+        green: $('input[name="green"]').val(),
+        orange: $('input[name="orange"]').val(),
+        pink: $('input[name="pink"]').val(),
+      }, function(data) {
+        $("#result").text(data.result);
+      });
+      return false;
+    });
+  });
+</script>
+
+
+
+{% endblock %}

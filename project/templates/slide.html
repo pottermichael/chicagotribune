@@ -1,0 +1,50 @@
+{% extends 'boot.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-3">
+    <div id="controls" class="row">
+      <div class="col-md-12">
+        <div id="slider-div">
+          <label>Year: <span id="year-label"></span></label>
+          <div id="date-slider"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+  $("#date-slider").slider({
+    max: 2024,
+    min: 2000,
+    value:2012,
+    step: 1,
+    slide: (event, ui) => {
+      time = ui.value;
+      document.getElementById("year-label").innerHTML = time
+    }},
+
+  function updateAjax (){
+      var data = 30;
+      console.log(data)
+      $.ajax({
+        url: "{{ url_for('main.transit') }}",
+        type: "POST",
+        data: {js:data},
+        dataType: "json",
+        contentType: 'application/json;charset=UTF-8',
+        success: function(response) {
+          $("#year-label").html(response);
+        },
+        error: function(xhr) {
+          //Do Something to handle error
+        }
+      });
+  });
+});
+
+</script>
+
+{% endblock%}

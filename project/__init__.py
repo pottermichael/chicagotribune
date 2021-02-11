@@ -1,14 +1,14 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
-#from flask_bootstrap import Bootstrap
+from flask_bootstrap import Bootstrap #added in for transit, double check
 import pandas as pd
 
 db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
-
+    bootstrap = Bootstrap(app) #added in for transit; double check
     app.config['SECRET_KEY'] = 'secret-key-goes-here'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///.db.sqlite'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False #get rid of annoying warning

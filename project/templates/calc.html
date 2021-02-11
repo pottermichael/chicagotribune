@@ -6,7 +6,7 @@
 
 <script type=text/javascript>
   $(function() {
-    $('a#calculate').bind('click', function() {
+    $('#calculate').bind('click', function() {
       $.getJSON('/cagr', {
         a: $('input[name="a"]').val(),
         b: $('input[name="b"]').val(),
