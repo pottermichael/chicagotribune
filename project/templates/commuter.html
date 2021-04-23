@@ -145,10 +145,13 @@
 
 
 <script>
+  //import data from server
   var allRoutes;
-  allRoutes = {{ data | safe }};
-  console.log("Import data from server");
-  console.log(props);
+  allRoutes = {{ routes | safe }};
+  console.log("Import data from API");
+  console.log(allRoutes);
+
+  //mapbox object
   mapboxgl.accessToken = 'pk.eyJ1IjoibXBvdHRlciIsImEiOiJjajAxZGltM3UwNjF2MzJsczVnN3R2eTNnIn0._Sj0HRLt8VTQGTojMWYFfQ';
   var coordinates = document.getElementById('coordinates');
   var map = new mapboxgl.Map({
@@ -159,12 +162,32 @@
   });
 
   map.on('load', function() {
-      //add layers for blip
+      //add layers for Mapbox routing data
       map.addSource('routes', {
         "type": "geojson",
-        "data": {
-          "type": "LineString",
-          "coordinates": [-87.639785, 41.877618],
+        "data": allRoutes
+      });
+      map.addLayer({
+        'id': 'lines',
+        'type': 'line',
+        'source': 'routes',
+        'paint': {
+        'line-width': 3,
+        // Use a get expression (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-get)
+        // to set the line-color to a feature property value.
+        'line-color': ['get', 'color']
+        }
+      });
+
+      map.addLayer({
+        'id': 'lines',
+        'type': 'line',
+        'source': 'routes',
+        'paint': {
+        'line-width': 3,
+        // Use a get expression (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-get)
+        // to set the line-color to a feature property value.
+        'line-color': ['get', 'color']
         }
       });
 
@@ -216,6 +239,7 @@
     coordinates.innerHTML =
       'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
   }
+  console.log("PIN COORDINATES")
   console.log(coordinates)
   marker.on('dragend', onDragEnd);
 </script>

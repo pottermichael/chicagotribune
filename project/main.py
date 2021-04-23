@@ -189,6 +189,8 @@ def transit_time():
     cta.drop_duplicates('station_id',inplace=True)
     #city train station dictionary for creating DF
     lines = cta.columns[7:16]
+    print("LINEES")
+    print(lines)
     city=[]
     for i in lines:
         if i == 'ppl_exp' or i == 'yellow':
@@ -210,7 +212,7 @@ def transit_time():
         'union': (41.877800,-87.638907),
         'millennium': (41.884322,-87.623474),
         #'clybourn': (41.917012,-87.668138), take out clybourn for now, may want to add in future
-        'lasalle': (41.874804,-87.632246),
+        'lasalle': (41.875812,-87.632226),
         'van buren': (41.876923,-87.622940)
     }
     #suburban train station dictionary for df
@@ -258,7 +260,7 @@ def mapbox_route_api():
     features = []
     #get pin coordinates
     #pin = get_pin_marker()
-    building = list((41.888146,-87.631575)) #placeholder for live pin drop
+    building = list((41.887630,-87.637613)) #placeholder for live pin drop
     orig_lng=building[1]
     orig_lat=building[0]
     count = 0
