@@ -180,14 +180,21 @@
       });
 
       map.addLayer({
-        'id': 'lines',
-        'type': 'line',
+        'id': 'station_points',
+        'type': 'circle',
         'source': 'routes',
         'paint': {
-        'line-width': 3,
-        // Use a get expression (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-get)
-        // to set the line-color to a feature property value.
-        'line-color': ['get', 'color']
+          'circle-color': ['get','color'],
+          'circle-opacity': 0.75,
+          'circle-radius': [
+            'interpolate',
+            ['linear'],
+            ['get', 'minutes'],
+            1,
+            20,
+            20,
+            40
+          ]
         }
       });
 
@@ -267,7 +274,5 @@
     });
   });
 </script>
-
-
 
 {% endblock %}

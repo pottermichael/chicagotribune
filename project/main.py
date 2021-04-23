@@ -260,7 +260,7 @@ def mapbox_route_api():
     features = []
     #get pin coordinates
     #pin = get_pin_marker()
-    building = list((41.887630,-87.637613)) #placeholder for live pin drop
+    building = list((41.885294,-87.621508)) #placeholder for live pin drop
     orig_lng=building[1]
     orig_lat=building[0]
     count = 0
