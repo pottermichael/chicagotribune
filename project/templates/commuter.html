@@ -145,6 +145,10 @@
 
 
 <script>
+  var allRoutes;
+  allRoutes = {{ data | safe }};
+  console.log("Import data from server");
+  console.log(props);
   mapboxgl.accessToken = 'pk.eyJ1IjoibXBvdHRlciIsImEiOiJjajAxZGltM3UwNjF2MzJsczVnN3R2eTNnIn0._Sj0HRLt8VTQGTojMWYFfQ';
   var coordinates = document.getElementById('coordinates');
   var map = new mapboxgl.Map({
@@ -155,6 +159,15 @@
   });
 
   map.on('load', function() {
+      //add layers for blip
+      map.addSource('routes', {
+        "type": "geojson",
+        "data": {
+          "type": "LineString",
+          "coordinates": [-87.639785, 41.877618],
+        }
+      });
+
       //add layers for blip
       map.addSource('point', {
         "type": "geojson",

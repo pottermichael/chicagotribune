@@ -1,7 +1,7 @@
 {% extends "boot.html" %}
 {%block content%}
 
-<h1>MOTIVATION COLORADO</h1>
+<h1>ADD PROJECT:</h1>
 
 {% for i in tool %}
 
@@ -16,8 +16,8 @@
   </div>
 </div>
 <button id=clickme onclick="clickme"> Power Play </button><br>
-<span id=rez>{{first}}</span><br>
-<p id=textbox>{{tool[-1]}}</p><br>
+<span id=rez></span>{{first}}
+
 
 <script type=text/javascript>
   $('#clickme').click(function (e) {
@@ -27,12 +27,13 @@
       slide: test,
       year: 2004,
       gfa: 50000,
-      sponsor: "guys"
+      sponsor: "guyz"
     };
     console.log(test)
     var val = data;
-    console.log(val);
-    alert(val);
+    console.log('request')
+    console.log(JSON.stringify(val));
+    alert(JSON.stringify(val));
     $.ajax({
       url: "{{ url_for('main.ajar') }}",
       type: 'POST',
@@ -40,8 +41,9 @@
       data: JSON.stringify(data),
       dataType: 'json',
       success: function (resp) {
-        console.log(resp);
-        $('#rez').val(resp);
+        console.log('response')
+        console.log(resp.gfa*3);
+        console.log($('#rez').html(resp.gfa*2));
         alert(JSON.stringify(resp));
       },
     });

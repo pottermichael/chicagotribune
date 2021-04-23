@@ -34,29 +34,29 @@
               </thead>
               <tbody>
                   <tr>
-                    <td><span id="fig1">""</span></td>
-                    <td><span id="fig2">""</span></td>
-                    <td><span id="fig3">""</span></td>
+                    <td><span id="fig1">-</span></td>
+                    <td><span id="fig2">0</span></td>
+                    <td><span id="fig3">0</span></td>
                   </tr>
                   <tr>
-                    <td><span id="fig4">""</span></td>
-                    <td><span id="fig5">""</span></td>
-                    <td><span id="fig6">""</span></td>
+                    <td><span id="fig4">-</span></td>
+                    <td><span id="fig5">0</span></td>
+                    <td><span id="fig6">0</span></td>
                   </tr>
                   <tr>
-                    <td><span id="fig7">""</span></td>
-                    <td><span id="fig8">""</span></td>
-                    <td><span id="fig9">""</span></td>
+                    <td><span id="fig7">-</span></td>
+                    <td><span id="fig8">0</span></td>
+                    <td><span id="fig9">0</span></td>
                   </tr>
                   <tr>
-                    <td><span id="fig10">""</span></td>
-                    <td><span id="fig11">""</span></td>
-                    <td><span id="fig12">""</span></td>
+                    <td><span id="fig10">-</span></td>
+                    <td><span id="fig11">0</span></td>
+                    <td><span id="fig12">0</span></td>
                   </tr>
                   <tr>
-                    <td><span id="fig13">""</span></td>
-                    <td><span id="fig14">""</span></td>
-                    <td><span id="fig15">""</span></td>
+                    <td><span id="fig13">-</span></td>
+                    <td><span id="fig14">0</span></td>
+                    <td><span id="fig15">0</span></td>
                   </tr>
               </tbody>
           </table>
@@ -71,127 +71,7 @@
   </div>
 </div>
 
-   <!-- Mapbox GL JS -->
 <script>
-  var props = {{data | safe}};
-  mapboxgl.accessToken = 'pk.eyJ1IjoibXBvdHRlciIsImEiOiJjajAxZGltM3UwNjF2MzJsczVnN3R2eTNnIn0._Sj0HRLt8VTQGTojMWYFfQ';
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mpotter/ck3ukxqlq0od01cnhven0r0ki',
-    center: [-87.632574, 41.886570],
-    zoom: 13.95
-  });
-
-  map.on('load', function() {
-      map.addSource('delivered',
-        {'type': 'geojson',
-        data: props
-        }
-      );
-      map.addLayer({
-        'id': 'property-circles',
-        'type': 'circle',
-        'source': 'delivered',
-        'paint': {
-          'circle-color': [
-            'match',
-            [
-              'get', 'use'
-            ],
-            'Resi',
-            '#fbb03b',
-            'Office',
-            '#0E9447',
-            /*other*/
-            '#7f00ff'
-          ],
-          'circle-opacity': .75,
-          'circle-radius': [
-            'interpolate',
-            ['linear'],
-            [
-              'number',
-              [
-                'get', 'gfa'
-              ]
-            ],
-            50000,
-            7.5,
-            900000,
-            35
-          ]
-        }
-      });
-      map.addLayer({
-        'id': 'property-labels',
-        'type': 'symbol',
-        'source': 'delivered',
-        'layout': {
-          'text-field': [
-            'to-string',
-            [
-              'get', 'project'
-            ]
-          ],
-          'text-font': [
-            'Open Sans Bold', 'Arial Unicode MS Bold'
-          ],
-          'text-size': [
-            'interpolate',
-            ['linear'],
-            ['zoom'],
-            4,
-            9,
-            6,
-            12
-          ],
-          'text-max-width': 5
-        },
-        'paint': {
-          'text-color': 'rgba(0,0,0,0.5)'
-        }
-      });
-
-      //add layers for blip
-      map.addSource('point', {
-        "type": "geojson",
-        "data": {
-          "type": "Point",
-          "coordinates": [-87.642820, 41.891868]
-        }
-      });
-      map.addLayer({
-        "id": "point",
-        "source": "point",
-        "type": "circle",
-        "paint": {
-          "circle-radius": initialRadius,
-          "circle-radius-transition": {
-            duration: 0
-          },
-          "circle-opacity-transition": {
-            duration: 0
-          },
-          "circle-color": "#256DFC"
-        }
-      });
-      map.addLayer({
-        "id": "point1",
-        "source": "point",
-        "type": "circle",
-        "paint": {
-          "circle-radius": initialRadius,
-          "circle-color": "#2558BD"
-        }
-      });
-      animateMarker(0);
-      console.log("mapbox input data check");
-      console.log(props);
-      console.log("end");
-  });
-
-
-
 // initialize button loop
 let time = 2000;
 let interval;
@@ -215,7 +95,6 @@ $("#play-button").on("click", function() {
   }
 });
 
-
 $(document).ready(function(){
   $("#date-slider").slider({
     max: 2024,
@@ -224,33 +103,33 @@ $(document).ready(function(){
     value: time,
     slide: function( event, ui ) {
       time = ui.value;
-      document.getElementById("year-label").innerHTML = time
+      document.getElementById("year-label").innerHTML = time;
       var slide_value = {yr: time};
       console.log("slider");
-      console.log(slide_value);
+      console.log(slide_value.yr);
       //alert(JSON.stringify(data.yr));
         $.ajax({
           url: "{{ url_for('main.supply') }}",
-          //async: false,
+          async: false,
           type: "POST",
           contentType: 'application/json',
           data: JSON.stringify(slide_value),
           dataType: 'json',
           success: function(response) {
+              console.log("response yr");
+              var ajaxResult = response.yr;
+              console.log(ajaxResult);
               var table = response.table;
               console.log("ajax table response")
               console.log(table)
 
+              chops = JSON.parse(response.data);
+              console.log("GLOBAL ajax geojson response");
+              console.log(chops);
 
-              props = response.data;
-              console.log("ajax geojson response");
-              console.log(props);
-
-
-
-              console.log("ajax table response")
+              console.log("ajax table response");
               var plot = response.plot;
-              console.log(plot)
+              console.log(plot);
               //response.sort()
               // first row
               $("#fig1").html(table[0].submarket.toLocaleString());
@@ -272,17 +151,145 @@ $(document).ready(function(){
               $("#fig11").html(table[3].gfa.toLocaleString());
               $("#fig12").html(table[3].pct.toLocaleString(undefined,{style: 'percent', minimumFractionDigits:1}));
 
-              // fourth row
+              // fifth row
               $("#fig13").html(table[4].submarket.toLocaleString());
               $("#fig14").html(table[4].gfa.toLocaleString());
               $("#fig15").html(table[4].pct.toLocaleString(undefined,{style: 'percent', minimumFractionDigits:1}));
 
               //alert(typeof(props));
+
           },
         });
       }
     });
 });
+
+var props;
+props = {{ data | safe }};
+console.log("Import data from server");
+console.log(props);
+console.log("Import complete");
+
+//Mapbox GL JS SCRIPT
+mapboxgl.accessToken = 'pk.eyJ1IjoibXBvdHRlciIsImEiOiJjajAxZGltM3UwNjF2MzJsczVnN3R2eTNnIn0._Sj0HRLt8VTQGTojMWYFfQ';
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mpotter/ck3ukxqlq0od01cnhven0r0ki',
+  center: [-87.632574, 41.886570],
+  zoom: 13.95
+});
+
+map.on('load', function() {
+    map.addSource('delivered',
+      {'type': 'geojson',
+      data: props
+      }
+    );
+
+    map.addLayer({
+      'id': 'property-circles',
+      'type': 'circle',
+      'source': 'delivered',
+      'paint': {
+        'circle-color': [
+          'match',
+          [
+            'get', 'use'
+          ],
+          'Resi',
+          '#fbb03b',
+          'Office',
+          '#0E9447',
+          /*other*/
+          '#7f00ff'
+        ],
+        'circle-opacity': .75,
+        'circle-radius': [
+          'interpolate',
+          ['linear'],
+          [
+            'number',
+            [
+              'get', 'gfa'
+            ]
+          ],
+          50000,
+          7.5,
+          900000,
+          35
+        ]
+      }
+    });
+    map.addLayer({
+      'id': 'property-labels',
+      'type': 'symbol',
+      'source': 'delivered',
+      'layout': {
+        'text-field': [
+          'to-string',
+          [
+            'get', 'project'
+          ]
+        ],
+        'text-font': [
+          'Open Sans Bold', 'Arial Unicode MS Bold'
+        ],
+        'text-size': [
+          'interpolate',
+          ['linear'],
+          ['zoom'],
+          4,
+          9,
+          6,
+          12
+        ],
+        'text-max-width': 5
+      },
+      'paint': {
+        'text-color': 'rgba(0,0,0,0.5)'
+      }
+    });
+
+
+    //add layers for blip
+    map.addSource('point', {
+      "type": "geojson",
+      "data": {
+        "type": "Point",
+        "coordinates": [-87.642820, 41.891868]
+      }
+    });
+    map.addLayer({
+      "id": "point",
+      "source": "point",
+      "type": "circle",
+      "paint": {
+        "circle-radius": initialRadius,
+        "circle-radius-transition": {
+          duration: 0
+        },
+        "circle-opacity-transition": {
+          duration: 0
+        },
+        "circle-color": "#256DFC"
+      }
+    });
+    map.addLayer({
+      "id": "point1",
+      "source": "point",
+      "type": "circle",
+      "paint": {
+        "circle-radius": initialRadius,
+        "circle-color": "#2558BD"
+      }
+    });
+    animateMarker(0);
+    console.log("mapbox input data check");
+    console.log(props);
+    console.log("end");
+});
+
+
 
 //bar chart functionality, not added to response yet
 var graphs = {{plot | safe}};
@@ -295,6 +302,5 @@ $(document).ready(function(){
         alert(selected_value);
     });
 });
-
 </script>
 {% endblock %}

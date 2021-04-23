@@ -42,7 +42,11 @@ def ajar():
         return res
     else:
         tool = ["its","not","working","ok?"]
-        res = make_response(jsonify({"message": "No JSON Received"}),400)
+        resz = {
+            "message": "No JSON Received",
+            "nombre": tool[-1],
+            }
+        res = make_response(jsonify(resz),200)
         print(res)
         return render_template("ajar.html", res=res, tool=tool, first=year_one)
 
@@ -84,6 +88,7 @@ my_file_geo = os.path.join(THIS_FOLDER,'data','chicago_cbd_supply_to_date.geojso
 my_file_cta = os.path.join(THIS_FOLDER,'data','cta_clean.csv')
 
 def weights():
+
     default_weights = {
         "Union": .25,
         "Ogilvie": .2,
@@ -99,6 +104,24 @@ def weights():
         "Pink": .02
         }
     return default_weights
+
+def route_colors():
+    route_colors = {
+      "Yellow":"#ffff00",
+      "Blue":"#00a5e0",
+      "Red":"#c60c30",
+      "Purple":"#941f8a",
+      "Orange":"#f79813",
+      "Green":"#009b3a",
+      "Pink":"#f589b0",
+      "Brown":"#62361b",
+      "Ogilvie": "#1152A7",
+      "Union": "#1152A7",
+      "Millennium": "#1152A7",
+      "Van Buren": "#1152A7",
+      "Lasalle": "#1152A7"
+     }
+    return route_colors
 
 #make new CONFIGURATION TO ENSURE PASSING BACK AND FORTH IS WORKKING BEFOFE MODIFY CODE BELOW
 
@@ -159,6 +182,7 @@ def transit_time():
     cta = pd.read_csv(my_file_cta)
     #subject location, to be replaced w/ js marker UI
     pin = (41.885294,-87.621508)
+
     #convert column from string to tuple
     cta['coords'] = list(zip(cta.lon, cta.lat))
     cta['dist_subj'] = cta['coords'].apply(lambda x: round(distance.distance(pin,x).miles,2))
@@ -177,7 +201,8 @@ def transit_time():
               'line': i,
               'station': df.STATION_NAME.values[0],
               'dist': df.dist_subj.values[0],
-              'coords': df.coords.values[0]
+              'coords': df.coords.values[0],
+              #'color': df.color.values[0],
           })
     #dict for commuter station calcs
     sub_stations = {
@@ -198,7 +223,8 @@ def transit_time():
               'line': k,
               'station': k,
               'dist': round(distance.distance(pin,v).miles,2),
-              'coords': str(v),
+              'coords': v,
+              'color': "#1152A7",
           })
     #combine dictionaries and create dataframe
     city_subs_total = city + suburbs
@@ -213,8 +239,71 @@ def transit_time():
     print(default_weights)
     total_commute['%ridership'] = total_commute.line.map(default_weights)
     total_commute['wtd_dist'] = round(total_commute['dist'] * total_commute['%ridership'],4)
-    print(total_commute)
+
+    #initialize route colors dictionary for mapping for API call
+    colors = route_colors()
+    total_commute['color'] = total_commute.line.map(colors)
     return total_commute
+
+def get_pin_marker():
+    #placeholder for mapbox pin API retrieval and putting to route API
+    return 'hold'
+
+def mapbox_route_api():
+    commuter = transit_time() #dataframe to iterate thru for routing API call
+    print("check dataframe is in API")
+    print(commuter)
+    token='pk.eyJ1IjoibXBvdHRlciIsImEiOiJjajAxZGltM3UwNjF2MzJsczVnN3R2eTNnIn0._Sj0HRLt8VTQGTojMWYFfQ'
+    mode='walking' #walking, cycling, driving
+    features = []
+    #get pin coordinates
+    #pin = get_pin_marker()
+    building = list((41.888146,-87.631575)) #placeholder for live pin drop
+    orig_lng=building[1]
+    orig_lat=building[0]
+    count = 0
+    for i, row in commuter.iterrows():
+        #prepare coordinates for API call
+        d = list(row['coords'])
+        #destination = (41.876923,-87.622940)
+        dest_lng = d[1]
+        dest_lat = d[0]
+
+        #add properties from DataFrame
+        comm_type = row['type']
+        train_line = row['line']
+        station_name = row['station']
+        color = row['color']
+        #perform API call and format results
+        url = 'https://api.mapbox.com/directions/v5/mapbox/'
+        baseAPI = url+f'{mode}/{orig_lng}%2C{orig_lat}%3B{dest_lng}%2C{dest_lat}?alternatives=false&geometries=geojson&steps=false&access_token={token}'
+        response = requests.get(baseAPI)
+        formattedResponse = json.loads(response.text)
+        #add properties from API results
+        coords = formattedResponse['routes'][0]['geometry']['coordinates']
+        dist = round(formattedResponse['routes'][0]['distance'] * 3.28084, 2)
+        time = round(formattedResponse['routes'][0]['duration'] / 60, 2)
+        features.append({"type":"Feature",
+              "properties": {
+                  "line": train_line,
+                  "color": color,
+                  "station": station_name,
+                  "lng": dest_lng,
+                  "lat": dest_lat,
+                  "distance": dist,
+                  "minutes": time,
+                  #in the future add employee share by station for Bubble Sizing paint on map
+              },
+              "geometry": {
+                  "type": "LineString",
+                  "coordinates": coords
+              }})
+    stringy = json.dumps(features)
+    prefix='{"type": "FeatureCollection", "features":'
+    suffix = '}'
+    combine = prefix+stringy+suffix
+    print(combine)
+    return combine
 
 def circle_viz():
     #groupby station for circle visualization; will need to get to geojson format [data | json]
@@ -225,10 +314,9 @@ def circle_viz():
 @main.route("/commuter", methods=["GET"])
 def commuter():
     transit_results = transit_time()
+    mapbox = mapbox_route_api()
     #station_ridership = circle_viz() #need to add to return
-    return render_template('commuter.html', computer=transit_results)
-
-
+    return render_template('commuter.html', computer=transit_results, routes=mapbox)
 
 @main.route("/slide", methods=["GET"])
 def slide():
@@ -241,26 +329,23 @@ def suggestions():
 
 
 """
-
 Downtown Development Data & Filter
 
+NEED TO REFACTOR FILTER GEOJSON TO SEPARATE FUNCTION ENDING IN A RETURN DF
 """
-
 
 def geojson_map(slider_year):
     dft = pd.read_json(my_file_geo)
     properties = []
     for i in dft.features:
-        if i['properties']['year'] == slider_year:
+        if i['properties']['year'] <= slider_year:
             properties.append(i)
     #json string
     stringy = json.dumps(properties)
     #create FeatureCollection
-    prefix='{"type": "FeatureCollection", "features":'
+    prefix ='{"type": "FeatureCollection", "features":'
     suffix = '}'
     combine = prefix+stringy+suffix
-    print("json error")
-    print(combine)
     return str(combine)
 
 def submarket_table(slider_year):
@@ -282,6 +367,31 @@ def submarket_table(slider_year):
             }
         resp_dict.append(a)
     return resp_dict
+
+@main.route("/supply", methods=["GET","POST"])
+def supply():
+    if request.method == "POST" and request.is_json:
+        req = request.get_json()
+        slider_year = req.get("yr")
+        data = geojson_map(slider_year)
+        resp_dict = submarket_table(slider_year)
+        bar = create_bar_plot(slider_year)
+        print("POST METHOD")
+        print(data)
+        print(resp_dict)
+        #res = make_response(jsonify(submkt_dict),200)
+        return jsonify({ 'data': data, 'yr': slider_year, 'table': resp_dict, 'plot': bar })
+    else:
+        #populate default values and load template
+        t = 2001
+        data = geojson_map(t)
+        resp_dict = submarket_table(t)
+        bar = create_bar_plot(t)
+        print("GET METHOD")
+        print(data)
+        print(resp_dict)
+        #resp_dict = jsonify(resp_dict)
+        return render_template("supply.html",data=data, submkt_dict=resp_dict, plot=bar)
 
 def create_bar_plot(slider_year):
     #df = pd.DataFrame({'x': x, 'y': y}) # creating a sample dataframe
@@ -307,38 +417,11 @@ def create_bar_plot(slider_year):
 
 @main.route("/plots")
 def plots():
-    bar = create_bar_plot(2010)
+    bar = create_bar_plot(2000)
     return render_template("plots.html",plot=bar)
 
-@main.route("/supply", methods=["GET","POST"])
-def supply():
-    if request.method == "POST" and request.is_json:
-        req = request.get_json()
-        print("raw request as json")
-        print(req)
-        slider_year = req.get("yr")
-        data = geojson_map(slider_year)
-        #print(data)
-        resp_dict = submarket_table(slider_year)
-        bar = create_bar_plot(slider_year)
-        #res = make_response(jsonify(submkt_dict),200)
-        #return jsonify(data=data,table=resp_dict,plot=bar)
-        return jsonify({ 'data': data, 'table': resp_dict, 'plot': bar })
-    else:
-        #populate default values and load template
-        t = 2009
-        data = geojson_map(t)
-        print(type(data))
-        print(data)
-        resp_dict = submarket_table(t)
-        bar = create_bar_plot(t)
-        #resp_dict = jsonify(resp_dict)
-        return render_template("supply.html",data=data, submkt_dict=resp_dict, plot=bar)
-
 """
-
 Other Routes
-
 """
 
 @main.route("/existing")
