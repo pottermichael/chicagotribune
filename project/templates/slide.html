@@ -13,7 +13,7 @@
     </div>
   </div>
 </div>
-
+{{years}}
 <script>
   $(document).ready(function(){
   $("#date-slider").slider({
@@ -24,13 +24,14 @@
     slide: (event, ui) => {
       time = ui.value;
       document.getElementById("year-label").innerHTML = time
+      console.log(time)
     }},
 
   function updateAjax (){
       var data = 30;
       console.log(data)
       $.ajax({
-        url: "{{ url_for('main.transit') }}",
+        url: "{{ url_for('main.slide') }}",
         type: "POST",
         data: {js:data},
         dataType: "json",

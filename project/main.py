@@ -322,7 +322,12 @@ def commuter():
 
 @main.route("/slide", methods=["GET"])
 def slide():
-    return render_template('slide.html')
+    slider = request.get_json()
+    print(slider)
+    f = list(range(2000,2025,1))
+    filt = [i for i in f if i < 2010]
+    print(f)
+    return render_template('slide.html', years = filt)
 
 @main.route("/suggestions", methods=["POST"])
 def suggestions():
