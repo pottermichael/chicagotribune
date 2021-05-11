@@ -1,6 +1,18 @@
 {% extends 'boot.html' %}
 
 {% block content %}
+
+<div class="slidecontainer">
+    <label> Year: <span id="Year"></span></label>
+    <input type="range" min="1998" max="2019" value="2014" class="slider" id="year_range" step="1">
+</div>
+
+<script>
+  var slider3 = $("#year_range");
+  $("#Year").html(slider3.val());
+</script>
+
+
 <div class="row">
     <div class="col-3">
     <div id="controls" class="row">
@@ -15,6 +27,7 @@
 </div>
 {{years}}
 <script>
+  time = 2012;
   $(document).ready(function(){
   $("#date-slider").slider({
     max: 2024,
@@ -23,13 +36,17 @@
     step: 1,
     slide: (event, ui) => {
       time = ui.value;
+      console.log("Slider function,time")
       document.getElementById("year-label").innerHTML = time
       console.log(time)
-    }},
+    }
+  });
+  console.log("outside function")
+  console.log(time)
 
   function updateAjax (){
-      var data = 30;
-      console.log(data)
+      console.log("AJAX REQUEST")
+      console.log(time)
       $.ajax({
         url: "{{ url_for('main.slide') }}",
         type: "POST",
@@ -38,13 +55,15 @@
         contentType: 'application/json;charset=UTF-8',
         success: function(response) {
           $("#year-label").html(response);
+          console.log("RESONSE")
+          console.log(response)
         },
         error: function(xhr) {
           //Do Something to handle error
         }
       });
+    }
   });
-});
 
 </script>
 

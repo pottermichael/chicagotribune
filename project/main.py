@@ -87,8 +87,9 @@ my_file_csv = os.path.join(THIS_FOLDER,'data','chicago_cbd_supply_to_date.csv')
 my_file_geo = os.path.join(THIS_FOLDER,'data','chicago_cbd_supply_to_date.geojson')
 my_file_cta = os.path.join(THIS_FOLDER,'data','cta_clean.csv')
 
-def weights():
 
+#remove from function
+def weights():
     default_weights = {
         "Union": .25,
         "Ogilvie": .2,
@@ -320,19 +321,17 @@ def commuter():
     #station_ridership = circle_viz() #need to add to return
     return render_template('commuter.html', computer=transit_results, routes=mapbox)
 
-@main.route("/slide", methods=["GET"])
+@main.route("/slide", methods=["GET","POST"])
 def slide():
-    slider = request.get_json()
-    print(slider)
-    f = list(range(2000,2025,1))
-    filt = [i for i in f if i < 2010]
-    print(f)
+    if request.method == "POST" and request.is_json:
+        print(request)
+        slider = request.args.get('year-label')
+        print(slider)
+        f = list(range(2000,2025,1))
+        filt = [i for i in f if i < 2010]
+    else:
+        filt = "OK"
     return render_template('slide.html', years = filt)
-
-@main.route("/suggestions", methods=["POST"])
-def suggestions():
-    text = request.get_json()
-    return jsonify(text)
 
 
 """
@@ -354,6 +353,24 @@ def geojson_map(slider_year):
     suffix = '}'
     combine = prefix+stringy+suffix
     return str(combine)
+
+def chicago_center(slider_year):
+    center = pd.read_csv(my_file_csv)
+    center = center[
+             (center['year']<=slider_year)
+            &(center['use']=='Office')
+             ]
+    #denominator
+    year_total_gfa = center['gfa'].sum()
+    #weighted average latitude
+    center['wtd_lat'] = center['lat'] * center['gfa']
+    lat_total = center['wtd_lat'].sum() / year_total_gfa
+    #weighted average longitude
+    center['wtd_lon'] = center['lon'] * center['gfa']
+    lon_total = center['wtd_lon'].sum() / year_total_gfa
+    #create list to pass to blipper
+    centerpoint = [lon_total,lat_total]
+    return centerpoint
 
 def submarket_table(slider_year):
     df_trial = pd.read_csv(my_file_csv)
@@ -383,9 +400,9 @@ def supply():
         data = geojson_map(slider_year)
         resp_dict = submarket_table(slider_year)
         bar = create_bar_plot(slider_year)
+        center = chicago_center(slider_year)
         print("POST METHOD")
-        print(data)
-        print(resp_dict)
+        print(center)
         #res = make_response(jsonify(submkt_dict),200)
         return jsonify({ 'data': data, 'yr': slider_year, 'table': resp_dict, 'plot': bar })
     else:
@@ -394,11 +411,11 @@ def supply():
         data = geojson_map(t)
         resp_dict = submarket_table(t)
         bar = create_bar_plot(t)
+        center = chicago_center(t)
         print("GET METHOD")
-        print(data)
-        print(resp_dict)
+        print(center)
         #resp_dict = jsonify(resp_dict)
-        return render_template("supply.html",data=data, submkt_dict=resp_dict, plot=bar)
+        return render_template("supply.html",data=data, submkt_dict=resp_dict, plot=bar, center=center)
 
 def create_bar_plot(slider_year):
     #df = pd.DataFrame({'x': x, 'y': y}) # creating a sample dataframe

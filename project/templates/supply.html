@@ -166,8 +166,10 @@ $(document).ready(function(){
 
 var props;
 props = {{ data | safe }};
+center = {{ center | safe }};
 console.log("Import data from server");
 console.log(props);
+console.log(center);
 console.log("Import complete");
 
 //Mapbox GL JS SCRIPT
@@ -256,7 +258,7 @@ map.on('load', function() {
       "type": "geojson",
       "data": {
         "type": "Point",
-        "coordinates": [-87.642820, 41.891868]
+        "coordinates": center
       }
     });
     map.addLayer({
@@ -288,8 +290,6 @@ map.on('load', function() {
     console.log(props);
     console.log("end");
 });
-
-
 
 //bar chart functionality, not added to response yet
 var graphs = {{plot | safe}};
