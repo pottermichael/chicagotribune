@@ -407,7 +407,7 @@ def supply():
         return jsonify({ 'data': data, 'yr': slider_year, 'table': resp_dict, 'plot': bar })
     else:
         #populate default values and load template
-        t = 2001
+        t = 2024
         data = geojson_map(t)
         resp_dict = submarket_table(t)
         bar = create_bar_plot(t)

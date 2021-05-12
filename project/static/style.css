@@ -32,7 +32,16 @@
   display: none;
 }
 
-#controls { margin-bottom: 200px; }
+#side-panel {
+  position: absolte;
+  width: 240px;
+  background-color: blue;
+  margin: 10px;
+}
+
+#controls {
+  margin-bottom: 200px;
+}
 
 #play-button {
   background: #F14E58;

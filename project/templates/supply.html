@@ -4,7 +4,7 @@
 
 <! -- create container -- >
 <div class="row">
-  <div class="col-3">
+  <div id="side-panel" class="col-3">
     <!-- Panel Header-->
     <h1>Downtown Chicago</h1>
     <h5>20 Years | Urban Development</h5>
@@ -62,7 +62,7 @@
           </table>
         </div>
         <!-- Create Plotly Bar Chart-->
-        <div class="chart" id="bargraph"></div>
+        <!-- <div class="chart" id="bargraph"></div>-->
       </div>
   </div>
    <!-- Map Column -->
@@ -92,6 +92,7 @@ $("#play-button").on("click", function() {
   } else {
     button.text("Play");
     clearInterval(interval);
+    console.log("Show button year", time)
   }
 });
 
@@ -104,7 +105,7 @@ $(document).ready(function(){
     slide: function( event, ui ) {
       time = ui.value;
       document.getElementById("year-label").innerHTML = time;
-      var slide_value = {yr: time};
+      var slide_value = {yr: time}; // does this need to be defined w var? or drop that?
       console.log("slider");
       console.log(slide_value.yr);
       //alert(JSON.stringify(data.yr));
@@ -164,7 +165,6 @@ $(document).ready(function(){
     });
 });
 
-var props;
 props = {{ data | safe }};
 center = {{ center | safe }};
 console.log("Import data from server");
@@ -182,6 +182,8 @@ var map = new mapboxgl.Map({
 });
 
 map.on('load', function() {
+  var filterYear = ['<=', ['number', ['get', 'year']], 2015];
+  //var propStatus = ['==', ['string', ['get', 'ext_plan']], "Existing"]
     map.addSource('delivered',
       {'type': 'geojson',
       data: props
@@ -220,7 +222,8 @@ map.on('load', function() {
           900000,
           35
         ]
-      }
+      },
+      'filter': filterYear
     });
     map.addLayer({
       'id': 'property-labels',
@@ -249,7 +252,8 @@ map.on('load', function() {
       },
       'paint': {
         'text-color': 'rgba(0,0,0,0.5)'
-      }
+      },
+      'filter': filterYear
     });
 
 
@@ -286,14 +290,11 @@ map.on('load', function() {
       }
     });
     animateMarker(0);
-    console.log("mapbox input data check");
-    console.log(props);
-    console.log("end");
 });
 
 //bar chart functionality, not added to response yet
-var graphs = {{plot | safe}};
-Plotly.plot('bargraph',graphs,{});
+//var graphs = {{plot | safe}};
+//Plotly.plot('bargraph',graphs,{});
 
 //radio buttons
 $(document).ready(function(){
